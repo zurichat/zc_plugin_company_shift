@@ -36,8 +36,8 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /var/www/zc_plugin_company_shift/
-            git pull
+            sudo git pull
             cd /var/www/zc_plugin_company_shift/
-            yarn install
-            yarn run build
+            sudo yarn install
+            sudo yarn run build
     
