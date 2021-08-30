@@ -4,11 +4,11 @@ name: Deployment Pipeline for Company Shift
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ main ]
 
   pull_request:
-    branches: [ master ]
-    types: [ closed ]
+    branches: [ main ]
+#    types: [ closed ]
 
 
 
