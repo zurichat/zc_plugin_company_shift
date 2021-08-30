@@ -40,4 +40,4 @@ jobs:
             cd /var/www/zc_plugin_company_shift/
             sudo yarn install
             sudo yarn run build
-            pm2 restart static-page-server-8080
+            sudo pm2 restart static-page-server-8080
