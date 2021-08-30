@@ -31,13 +31,13 @@ jobs:
       - name: Exec remote commands via SSH
         uses: appleboy/ssh-action@master
         with:
-          key: ${{ secrets.SSH_KEY }}
           host: ${{ secrets.SSH_HOSTNAME }}
+          key: ${{ secrets.SSH_KEY }}
           username: ${{ secrets.SSH_USERNAME }}
           script: |
             cd /var/www/zc_plugin_company_shift/
             git pull
             cd /var/www/zc_plugin_company_shift/
-            sudo yarn install
-            sudo yarn run build
-            sudo pm2 restart static-page-server-8080
+            yarn install
+            yarn run build
+            pm2 restart static-page-server-8080
