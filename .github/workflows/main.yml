@@ -31,9 +31,9 @@ jobs:
       - name: Exec remote commands via SSH
         uses: appleboy/ssh-action@master
         with:
+          key: ${{ secrets.SSH_KEY }}
           host: ${{ secrets.SSH_HOSTNAME }}
           username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /var/www/zc_plugin_company_shift/
             git pull
