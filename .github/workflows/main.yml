@@ -33,6 +33,7 @@ jobs:
         with:
           host: ${{ secrets.SSH_HOSTNAME }}
           key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           username: ${{ secrets.SSH_USERNAME }}
           script: |
             cd /var/www/zc_plugin_company_shift/
