@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn install          #Install Dependencies
-#       - run: yarn test             #Trigger Automated Test
+      - run: yarn test             #Trigger Automated Test
 
   build:
     needs: test
