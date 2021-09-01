@@ -54,6 +54,15 @@
     color: #B8003C;
     font-family: 'Lato', sans-serif;
   }
+
+  a:link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a i {
+    color: #30C67E;
+  }
   
   
   .area3 img {
