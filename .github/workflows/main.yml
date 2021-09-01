@@ -54,8 +54,8 @@ jobs:
           script: |
             cd /var/www/zc_plugin_company_shift/
             sudo git checkout dev
-            sudo git pull
+            sudo git pull origin dev
             cd /var/www/zc_plugin_company_shift/
-            yarn install
+            sudo yarn install
             sudo yarn run build
-            pm2 restart company_shift
+            pm2 restart all
