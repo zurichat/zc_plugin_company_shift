@@ -1,13 +1,13 @@
-name: Deployment Pipeline for Company Shift
+name: Continuous Integration and Deployment Pipeline for Company Shift
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ main ]
+    branches: [ dev ]
 
   pull_request:
-    branches: [ main ]
+    branches: [ dev ]
     types: [ closed ]
 
 
@@ -17,8 +17,23 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+  # This workflow contains a single job called "test and build"
+#   test:                           #Test Job 
+#     runs-on: ubuntu-latest        #Type of Machine Needed to Run the Job
+#     strategy:
+#       matrix:
+#         node-version: [14.x]      #Set-up Node 
+#     steps:
+#       - uses: actions/checkout@v2 #Checks-out Repository so that workflow can access it
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#       - run: yarn install          #Install Dependencies
+#       - run: yarn test             #Trigger Automated Test
+
   build:
+#     needs: test
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -40,5 +55,6 @@ jobs:
             cd /var/www/zc_plugin_company_shift/
             sudo yarn install
             sudo yarn run build
-            sudo pm2 restart all
-    
+            sudo pm2 restart company_shift
+
+
