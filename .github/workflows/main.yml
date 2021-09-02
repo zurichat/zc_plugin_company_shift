@@ -56,4 +56,4 @@ jobs:
             cd server
             sudo yarn install
             sudo yarn run build
-            sudo pm2 restart all
+            sudo pm2 restart server
