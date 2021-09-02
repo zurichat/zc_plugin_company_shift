@@ -53,6 +53,7 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /var/www/zc_plugin_company_shift/
+            sudo git pull origin dev
             cd server
             sudo yarn install
             sudo yarn run build
