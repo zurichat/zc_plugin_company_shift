@@ -56,4 +56,4 @@ jobs:
             cd server
             sudo yarn install
             sudo yarn run build
-            pm2 restart company_shift
+            sudo pm2 restart all
