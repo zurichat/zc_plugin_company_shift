@@ -7,7 +7,7 @@ on:
     branches: [ dev ]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -24,5 +24,4 @@ jobs:
 
       - name: Install dependencies and test
         working-directory: ./server
-        run: yarn install && yarn build
-        run: yarn test
+        run: yarn install && yarn build && yarn test
