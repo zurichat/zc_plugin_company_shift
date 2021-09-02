@@ -20,22 +20,22 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
 #   This workflow contains a single job called "test and build"
-  test:                           #Test Job 
-    runs-on: ubuntu-latest        #Type of Machine Needed to Run the Job
-    strategy:
-      matrix:
-        node-version: [14.x]      #Set-up Node 
-    steps:
-      - uses: actions/checkout@v2 #Checks-out Repository so that workflow can access it
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: yarn install          #Install Dependencies
-      - run: yarn test             #Trigger Automated Test
+#   test:                           #Test Job 
+#     runs-on: ubuntu-latest        #Type of Machine Needed to Run the Job
+#     strategy:
+#       matrix:
+#         node-version: [14.x]      #Set-up Node 
+#     steps:
+#       - uses: actions/checkout@v2 #Checks-out Repository so that workflow can access it
+#       - name: Use Node.js ${{ matrix.node-version }}
+#         uses: actions/setup-node@v1
+#         with:
+#           node-version: ${{ matrix.node-version }}
+#       - run: yarn install          #Install Dependencies
+#       - run: yarn test             #Trigger Automated Test
 
   build:
-    needs: test
+#     needs: test
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -55,7 +55,9 @@ jobs:
             cd /var/www/zc_plugin_company_shift/
             sudo git checkout dev
             sudo git pull origin dev
-            cd /var/www/zc_plugin_company_shift/
+            cd /var/www/zc_plugin_company_shift/client
             sudo yarn install
             sudo yarn run build
+            cd /var/www/zc_plugin_company_shift/server
+            sudo yarn install
             pm2 restart all
