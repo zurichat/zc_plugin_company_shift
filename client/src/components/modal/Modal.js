@@ -1,19 +1,20 @@
-import React from 'react'
-import './Modal.css'
-import avatar from '../../company_shift_logo.png'
+import React from 'react';
+import './Modal.css';
+import avatar from '../../company_shift_logo.png';
 
 const closeModal = (e) =>{ 
-    e.target
-    }
+    e.target.parentElement.className ='hidden';
+    // console.log(e.target.parentElement, "clicked");
+    };
 
 function Modal() {
     return (
         <div className='overlay'>
-            <button className="close" onclick=>X</button>
+            <button className="close" onClick={closeModal}>X</button>
             <div className='modal'>
                 <div className="header">
                     <div className="user">
-                        <img src={avatar} alt="" />
+                        <img src={avatar} alt="profile avatar of employee" />
                         <aside>
                             <h3>Abu Emmanuel</h3>
                             <p>Frontend Department</p>
@@ -40,6 +41,54 @@ function Modal() {
                             <h5>Shift TIme</h5>
                             <h5>Status</h5>
                             <h5>Hours Tracked</h5>
+                        </div>
+                        <div className="tr">
+                            <p>24 Aug 2021</p>
+                            <p>Morning</p>
+                            <div className="tr-bg">
+                                <div className='tr-shift'>
+                                    <h6>Shift</h6>
+                                    <small>On Duty</small>
+                                </div>
+                                <p>9am - 1pm</p>
+                            </div>
+                            <h5>5hr 30min</h5>
+                        </div>
+                        <div className="tr">
+                            <p>24 Aug 2021</p>
+                            <p>Morning</p>
+                            <div className="tr-bg">
+                                <div className='tr-shift'>
+                                    <h6>Shift</h6>
+                                    <small>On Duty</small>
+                                </div>
+                                <p>9am - 1pm</p>
+                            </div>
+                            <h5>5hr 30min</h5>
+                        </div>
+                        <div className="tr">
+                            <p>24 Aug 2021</p>
+                            <p>Morning</p>
+                            <div className="tr-bg">
+                                <div className='tr-shift'>
+                                    <h6>Shift</h6>
+                                    <small>On Duty</small>
+                                </div>
+                                <p>9am - 1pm</p>
+                            </div>
+                            <h5>5hr 30min</h5>
+                        </div>
+                        <div className="tr">
+                            <p>24 Aug 2021</p>
+                            <p>Morning</p>
+                            <div className="tr-bg">
+                                <div className='tr-shift'>
+                                    <h6>Shift</h6>
+                                    <small>On Duty</small>
+                                </div>
+                                <p>9am - 1pm</p>
+                            </div>
+                            <h5>5hr 30min</h5>
                         </div>
                         <div className="tr">
                             <p>24 Aug 2021</p>

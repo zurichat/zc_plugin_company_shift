@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+<<<<<<< HEAD
   "scripts": { 
     "start": "node server.js --env production",
     "build": "cd ../client && sudo yarn install && sudo yarn build",
     "dev": "nodemon server.js"
+=======
+  "scripts": {
+    "start": "nodemon server.js"
+>>>>>>> c55d045868abfe2440a580e20af5aa6cabb783da
   },
   "keywords": [],
   "author": "",
