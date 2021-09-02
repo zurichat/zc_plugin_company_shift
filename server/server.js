@@ -10,9 +10,9 @@ app.use(express.static(path.join(__dirname, "..", "client", "build")));
 //app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/api', (req,res)=> {
-  return res.json({
+  return res.json.stringify(({
     message: 'Employee Shift API Success!!!'
-  })
+  }))
 })
 
 
