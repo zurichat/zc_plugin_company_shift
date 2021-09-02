@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.overlay {
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.modal {
+  background: #fff;
+  max-width: 800px;
+  z-index: 1010;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+  border-radius: 3px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.header button {
+  padding: 8px 25px;
+  border: none;
+  border-radius: 3px;
+  background: #30C67E;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+p.view {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  text-align: center;
+}
+.header small {
+  color: #30C67E;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user img {
+  margin-right: 7px;
+}
+.tab {
+  display: flex;
+  align-item: center;
+  padding: 10px 0;
+}
+.tab li {
+  list-style: none;
+  margin-right: 20px;
+  padding: 3px 0;
+}
+.tab li.active {
+  color: #30C67E;
+  border-bottom: 1px solid #30C67E;
+  font-weight: bold;
+}
+.tab-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.tab-head button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 3px;
+  background: #2F80ED;
+  color: white;
+  cursor: pointer;
+}
+.table {
+  background: #E8F0FF;
+}
+.table > div {
+  padding: 10px 5px;
+}
+
+.table > div:nth-child(even) {
+  background: #fff;
+}
+
+.th,
+.tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+.th > *,
+.tr > * {
+  padding: 5px;
+}
+.tr-bg {
+  background: lightgreen;
+}
+.tr-shift {
+  display: flex;
+  justify-content: space-between;
+}
+
+small {
+  font-size: 0.7rem;
+}
