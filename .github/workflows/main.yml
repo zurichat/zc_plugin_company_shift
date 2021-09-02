@@ -59,4 +59,5 @@ jobs:
             sudo yarn run build
             cd ../server
             sudo yarn install
-            sudo pm2 restart all
+            pm2 reload package.json --update-env
+            pm2 restart all
