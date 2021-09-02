@@ -53,11 +53,10 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /var/www/zc_plugin_company_shift/
-            sudo git checkout dev
             sudo git pull origin dev
-            cd /var/www/zc_plugin_company_shift/client
+            cd client
             sudo yarn install
             sudo yarn run build
-            cd /var/www/zc_plugin_company_shift/server
+            cd ../server
             sudo yarn install
             pm2 restart all
