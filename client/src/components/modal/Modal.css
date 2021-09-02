@@ -36,6 +36,9 @@
   left: 50%;
   transform: translate(-50%, -50%)
 }
+.hidden{
+  display: none;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -67,7 +70,7 @@ p.view {
 }
 .tab {
   display: flex;
-  align-item: center;
+  align-items: center;
   padding: 10px 0;
 }
 .tab li {

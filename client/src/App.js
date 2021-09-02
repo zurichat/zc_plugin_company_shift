@@ -1,7 +1,9 @@
 import logo from './company_shift_logo.png';
 import company from './company_shift.png';
+import Modal from './components/modal/Modal'
 
-import './App.css';
+import './App.css'; 
+
 
 function App() {
   return (
@@ -17,13 +19,14 @@ function App() {
 
               <p className="cs-built">Bulit by team curies</p>
 
-              <button className="cs-button">Get started</button>
+              <button className="cs-button"git >Get started</button>
           </div>
         </div>
         <div className="cs-right split">
             <img src={company} className="cs-company_img" alt="Employee Shift"/>
           </div>
       </header>
+      <Modal />
       
     </div>
   );
