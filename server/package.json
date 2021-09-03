@@ -10,14 +10,21 @@
     "dev": "nodemon server.js"
 =======
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon server.js"
 >>>>>>> c55d045868abfe2440a580e20af5aa6cabb783da
+=======
+    "start": "cross-env NODE_ENV=production node server.js",
+    "build": "cd ../client && sudo yarn install && sudo yarn build",
+    "dev": "cross-env NODE_ENV=development nodemon server.js"
+>>>>>>> 4c9597768232aa865ce3963cda26aa4292031029
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "2.8.5",
+    "cross-env": "7.0.3",
     "express": "4.17.1",
     "nodemon": "2.0.12"
   }
