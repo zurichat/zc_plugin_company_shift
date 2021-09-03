@@ -2,12 +2,14 @@
 ### **Zuri Chat Company Shift Plugin**
 ---
 
-### **Overview**
+**Overview** <br />
 Company Shift Management Plugin for Zuri Chat.
 
 <br />
 <br />
-## Hosted URL:
+
+Live URL: <br />
+
 [EmployeeShift](https://employeeshift.zuri.chat/)
 
 ## Tech Stack:
@@ -16,7 +18,8 @@ Company Shift Management Plugin for Zuri Chat.
 
 <br />
 <br />
-## **Dev Setup Instruction**
+
+**Dev Setup Instruction**
 
 1. Install `Node.js, Yarn, Git`
 2. Clone  repo using `git clone https://github.com/zurichat/zc_plugin_company_shift.git`
