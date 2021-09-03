@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box Icon CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shift.css" />
+    <title>Shift</title>
+  </head>
+  <body>
+    <!-- Side Bar -->
+    <div class="side-bar">
+      <div class="logo-content">
+        <div class="logo">
+          <div class="logo-name">
+            <img src="images/LOGO.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <ul class="side-bar-list">
+        <li>
+          <a href="">
+            <i class="bx bxs-message-square-dots"></i>
+            <span class="links-name">Thread</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bx-at"></i>
+            <span class="links-name">Mentions & Reactions</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <i class="bx bx-chat"></i>
+            <span class="links-name">All DM's</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="">
+            <i class="bx bxs-layer-plus"></i>
+            <span class="links-name">Integrate</span>
+          </a>
+        </li>
+
+        <!-- Dropdown list items -->
+        <ul class="dropdown-list show" id="myDropdown">
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bx-chair"></i>
+              <span class="dropdown-list-items-name">lounge</span>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bx-hash"></i>
+              <span class="dropdown-list-items-name">shift management</span>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bxs-shopping-bag-alt"></i>
+              <span class="dropdown-list-items-name">meeting room</span>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bx-music"></i>
+              <span class="dropdown-list-items-name">music room</span>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bxs-user-detail"></i>
+              <span class="dropdown-list-items-name">conference room</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Dropdown -->
+        <li class="dropdown-menu">
+          <a href="">
+            <i class="bx bx-chevron-down"></i>
+            <span class="links-name">Channels</span>
+            <i class="bx bx-plus-circle"></i>
+          </a>
+        </li>
+
+        <!-- Dropdown list items -->
+        <ul class="dropdown-list show" id="myDropdown">
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bx-hash"></i>
+              <span class="dropdown-list-items-name">announcement</span>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bx-hash"></i>
+              <span class="dropdown-list-items-name">designers</span>
+            </a>
+          </li>
+          <li class="dropdown-list-items">
+            <a href="">
+              <i class="bx bx-lock-alt"></i>
+              <span class="dropdown-list-items-name">stage 4</span>
+            </a>
+          </li>
+        </ul>
+
+        <li class="dropdown-menu">
+          <a href="">
+            <i class="bx bx-chevron-down"></i>
+            <span class="links-name">Direct Messages</span>
+            <i class="bx bx-plus-circle"></i>
+          </a>
+        </li>
+
+        <!-- Dropdown list items -->
+        <ul class="dropdown-list">
+          <li class="dropdown-list-items">
+            <div class="profile-content">
+              <div class="profile">
+                <div class="profile-details">
+                  <img src="images/People of Brooklyn Avatar.png" alt="" />
+                  <div class="name">Miles Esther</div>
+                </div>
+                <div class="profile-details">
+                  <img src="images/People of Brooklyn Avatar.png" alt="" />
+                  <div class="name">Cooper Krisitin</div>
+                </div>
+                <div class="profile-details">
+                  <img src="images/People of Brooklyn Avatar.png" alt="" />
+                  <div class="name">Flores Juanita</div>
+                </div>
+                <div class="profile-details">
+                  <img src="images/People of Brooklyn Avatar.png" alt="" />
+                  <div class="name">Black Mavin</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </ul>
+    </div>
+
+    <!-- Home Content -->
+    <div class="home-content">
+      <nav>
+        <div class="nav-items">
+          <div class="search-box">
+            <div class="search">
+              <input type="search" placeholder="Search here" name="" id="" />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+          <div class="profile-content">
+            <div class="nav-profile">
+              <div class="nav-profile-details">
+                <i class="bx bx-cog"></i>
+                <img src="images/People of Brooklyn Avatar.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Dashboard -->
+      <div class="dashboard">
+        <!-- Dashboard Header -->
+        <div class="dashboard-header">
+          <div class="dashboard-heading">
+            <h1>Shift Management</h1>
+            <div class="users-images">
+              <img src="images/Ellipse 6.png" alt="" />
+              <img src="images/Ellipse 5.png" alt="" />
+              <img src="images/Ellipse 4.png" alt="" />
+              <img src="images/Ellipse 3 (1).png" alt="" />
+              <img src="images/Ellipse 2.png" alt="" />
+            </div>
+          </div>
+          <div class="shift-profile">
+            <div class="user-shift-profile">
+              <div class="user-shift-profile-details">
+                <div class="user-shift-close-icon">
+                  <i class="bx bx-x"></i>
+                </div>
+                <div class="user-shift-image"></div>
+                <div class="user-shift-name">
+                  <h5>
+                    <a href="">@Ademike</a>
+                    <span>from DevOp stack</span>
+                    <span>duty <em>ENDS</em> in 5 mins</span>
+                  </h5>
+                  <span>Today August 26th</span>
+                </div>
+              </div>
+            </div>
+            <div class="shift-buttons">
+              <button>
+                <span>Swap shift</span>
+                <i class="bx bx-chevron-down"></i>
+              </button>
+              <button>
+                <span>Create a new shift</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dashboard Main Content -->
+        <div class="dashboard-main-content">
+          <div class="dashboard-main-content-heading">
+            <form action="">
+              <select name="" id="">
+                <option value="department">Department</option>
+              </select>
+              <select name="" id="">
+                <option value="all-status">All Status</option>
+              </select>
+              <select name="" id="">
+                <option value="all-shifts">All Shifts</option>
+              </select>
+            </form>
+            <div class="dashboard-main-content-heading-schedule">
+              <div class="weekly">Weekly</div>
+              <div class="time">Mon 27 - Fri 31</div>
+              <div class="schedule-shift">
+                <i class="bx bx-chevron-left"></i>
+                <i class="bx bx-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-main-content-body">
+            <table>
+              <colgroup span="7"></colgroup>
+              <tr>
+                <th colspan="1">Employee</th>
+                <th>
+                  <h5>Mon</h5>
+                  <span>Aug 27</span>
+                </th>
+                <th>
+                  <h5>Tue</h5>
+                  <span>Aug 28</span>
+                </th>
+                <th>
+                  <h5>Wed</h5>
+                  <span>Aug 29</span>
+                </th>
+                <th>
+                  <h5>Thu</h5>
+                  <span>Aug 30</span>
+                </th>
+                <th>
+                  <h5>Fri</h5>
+                  <span>Aug 31</span>
+                </th>
+                <th>
+                  <h5>Sat</h5>
+                  <span>Sep 1</span>
+                </th>
+              </tr>
+
+              <!-- 1 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/profile (1).png" alt="" />
+                        <div class="name">Abu Emmanuel</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="on-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>On Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                      <span>30 mins <em>left</em></span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 2 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/profile (2).png" alt="" />
+                        <div class="name">Dame Omon</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="await">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="awating">
+                        <i class='bx bxs-circle'></i>
+                        <span>Awaiting</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="off-duty">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="off-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>Off Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              
+              <!-- 3 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/profile (3).png" alt="" />
+                        <div class="name">Ezechukwu Lota</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts"  id="ended">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="ended-shift">
+                        <i class='bx bxs-circle'></i>
+                        <span>Ended Shift</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 4 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/profile (4).png" alt="" />
+                        <div class="name">Folashade Olaiya</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="on-duty">
+                        <i class='bx bxs-circle'></i>
+                        <span>On Duty</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 5 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/profile (5).png" alt="" />
+                        <div class="name">Ogunlana Michael</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="await">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="awating">
+                        <i class='bx bxs-circle'></i>
+                        <span>Awaiting</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 6 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/Ellipse 3.png" alt="" />
+                        <div class="name">Olakunle Fasasi</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="shifts" id="ended">
+                    <div class="shift-status">
+                      <span>Shift</span>
+                      <h5 class="ended-shift">
+                        <i class='bx bxs-circle'></i>
+                        <span>Ended Shift</span> 
+                      </h5>
+                    </div>
+                    <div class="shift-duration">
+                      <span>9am - 5pm</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 7 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/profile.png" alt="" />
+                        <div class="name">Emmanuel Abu</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <!-- 8 -->
+              <tr>
+                <td>
+                  <div class="profile-content">
+                    <div class="profile">
+                      <div class="shift-profile-details">
+                        <img src="images/profile.png" alt="" />
+                        <div class="name">Emmanuel Abu</div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
