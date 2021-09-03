@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.css">
+<link rel="stylesheet" type="text/css" href="mook.css">
+
+
+<!-- ChatBot -->
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.convform.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+<body>
+<!-- ChatBot -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! welocome to zuri live chat How can I help you" name="category">
+        <option value="SuggesFeature">Suggest a feature ?</option>
+        <option value="RequestLeave">Request a casul leave  ?</option>
+        <option value="ChangeShift">Change your shift period ?</option>
+        <option value="EmergencyLeave">Request an emergency leave ?</option>
+        <option value="SpeakAdmin">Speak to an Admin ?</option>
+
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="ChangeShift">
+          <input type="text" name="fullName" data-conv-question="Please, enter the period of your shift for which you want changed">    
+        </div>
+        <div data-conv-case="RequestLeave" data-conv-fork="first-question2">
+          <input type="text" name="roleName" data-conv-question="Please, enter your name of your role"> 
+        </div>
+
+        <!-- <div data-conv-case="ChangeShift" data-conv-fork="first-question2">
+          <input type="text" name="roleName" data-conv-question="Please, enter the period of your shift for which you want changed"> 
+        </div>
+
+        <div data-conv-case="EmergencyLeave" data-conv-fork="first-question2">
+          <input type="text" name="roleName" data-conv-question="Please, enter the details of your Emergency leabe "> 
+        </div>
+
+        <div data-conv-case="SpeakAdmin" data-conv-fork="first-question2">
+          <input type="text" name="roleName" data-conv-question="Please, enter your name of your role, email, and Id number"> 
+        </div> -->
+
+      </div>
+
+      <input type="text" name="name" data-conv-question="Please, Enter your Fullname">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Confirm</option>
+      </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+
+
+
+</body>
+</html>
