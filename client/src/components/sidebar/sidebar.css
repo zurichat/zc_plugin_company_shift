@@ -1,7 +1,8 @@
 .sideBar-container {
   width: 269px;
   height: 100%;
-  padding-left: 50px;
+
+  padding-left: max(20px, 1%);
 }
 .sidebar-header {
   height: 70px;

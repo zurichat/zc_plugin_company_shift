@@ -101,7 +101,10 @@ const navBars = [
     hasSubNav: false,
     parentText: 'Integrate',
   },
+
   {
+    icon_2: directMsg2,
+    icon_1: directMsg1,
     text: 'Channels',
     icon: chanIcons,
     subNav: false,
@@ -109,6 +112,7 @@ const navBars = [
     hasImage: false,
     img: null,
     hasSubNav: true,
+    multipleIcons: true,
   },
   {
     text: 'announcements',

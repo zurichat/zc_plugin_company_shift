@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import main from './main.css';
 //icons
 import { AiOutlineSearch } from 'react-icons/ai';
@@ -8,8 +8,10 @@ import { IoChevronBackOutline } from 'react-icons/io5';
 import { IoChevronForward } from 'react-icons/io5';
 import { GoPrimitiveDot } from 'react-icons/go';
 //images
+import Employ from '../../assets/user';
 
 function Main() {
+  const [Employee, setEmployee] = useState(Employ);
   return (
     <div className='main-conatiner'>
       <section className='main-header'>
@@ -163,41 +165,75 @@ function Main() {
               <p>SEP1 </p>
             </th>
           </tr>
-          <tr>
-            <td className='profile'>
-              <span>
-                <div className='table-user-image-cont'>
-                  <img
-                    src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
-                    alt=''
-                    style={{
-                      width: '100%',
-                      height: '100%',
-                      borderRadius: '24px',
-                    }}
-                  />
-                </div>
-              </span>
-              &nbsp;
-              <span>
-                <h5 className='profile-text'>Abu Emmanuel</h5>
-              </span>
-            </td>
-            <td className='resume-work'>
-              <div className='resume-shift'>
-                <span className='shift-text'>shift</span>
-                <span className='resume-icon'>
-                  <GoPrimitiveDot></GoPrimitiveDot>
-                  <span>on Duty</span>
+          {Employee.map((eachEmployee) => (
+            <tr>
+              <td className='profile'>
+                <span>
+                  <div className='table-user-image-cont'>
+                    <img
+                      src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
+                      alt=''
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        borderRadius: '24px',
+                      }}
+                    />
+                  </div>
                 </span>
-              </div>
+                &nbsp;
+                <span>
+                  <h5 className='profile-text'>{eachEmployee.name}</h5>
+                </span>
+              </td>
+              {eachEmployee.daysOfTheWeekAvailable.map((eachitems, index) => {
+                // const { MON } = eachEmployee.daysOfWeek;
+                let b;
 
-              <div className='resume-time'>
-                <span className='resume-work-time'>9am -5pm</span>
-                <span className='resume-time-left'>30minute-left</span>
-              </div>
-            </td>
-          </tr>
+                if (eachEmployee.daysOfWeek) {
+                  b = eachEmployee.daysOfWeek[index];
+                }
+
+                let employeeStatus;
+                let style;
+                let shift;
+                let timeLeft;
+                if (eachEmployee[eachitems.status]) {
+                  let status_holder = eachitems.status;
+                  employeeStatus = eachEmployee[status_holder];
+                  style = {
+                    backgroundColor: employeeStatus['color'],
+                    color: employeeStatus['iconColor'],
+                  };
+                  shift = employeeStatus['shift'];
+                  timeLeft = employeeStatus['timeLeft'];
+                }
+                if (b === eachitems.Day) {
+                  /**/
+
+                  return (
+                    <td className='resume-work' style={style}>
+                      <div className='resume-shift'>
+                        <span className='shift-text'>shift</span>
+                        <span className='resume-icon'>
+                          <GoPrimitiveDot></GoPrimitiveDot>
+                          <span>{eachitems.status}</span>
+                        </span>
+                      </div>
+
+                      <div className='resume-time'>
+                        <span className='resume-work-time'>{shift}</span>
+                        <span className='resume-time-left'>{timeLeft}</span>
+                      </div>
+                    </td>
+                  );
+                } else {
+                  //b = eachEmployee.daysOfWeek[index + 1];
+                  return <td></td>;
+                }
+              })}
+            </tr>
+          ))}
         </table>
       </section>
     </div>

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .main-conatiner {
   width: 80%;
   height: 100%;
@@ -82,6 +86,7 @@
   justify-content: space-between;
 }
 .main-department-items select {
+  max-width: 138px;
   width: 138px;
   height: 56px;
   border-radius: 3px;
@@ -174,12 +179,11 @@
 
 #workers td,
 #workers th {
-  border: 1px solid #ddd;
+  border-left: 2px solid rgba(232, 240, 255, 1);
   padding: 8px;
 }
 
 #workers tr:nth-child(even) {
-  background-color: #f2f2f2;
 }
 
 #workers th {
@@ -189,6 +193,7 @@
   background-color: rgba(249, 250, 252, 1);
 
   color: black;
+  width: 200px;
 }
 
 .table-user-image-cont {
@@ -203,9 +208,10 @@
 }
 
 .resume-work {
-  width: 200px;
+  width: 180px;
   height: 100%;
   padding: 2px;
+  margin: 1px;
 }
 .resume-shift {
   display: flex;
@@ -226,7 +232,6 @@
   display: flex;
   align-items: center;
   font-size: 10px;
-  color: green;
 }
 .shift-text {
   display: flex;
@@ -248,4 +253,15 @@
 
 .profile-text {
   font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .main-txt {
+    font-size: 0.5em;
+  }
+  .main-department-items select {
+    width: 100px;
+  }
+  .main-title-btns button {
+    width: 200px;
+  }
 }
