@@ -14,20 +14,27 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-#   This workflow contains a single job called "test and build"
-  test:                           #Test Job 
-    runs-on: ubuntu-latest        #Type of Machine Needed to Run the Job
+  test:
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x]      #Set-up Node 
+        node-version: [16.x]
+
     steps:
-      - uses: actions/checkout@v2 #Checks-out Repository so that workflow can access it
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn install          #Install Dependencies
-      - run: yarn test             #Trigger Automated Test
+
+      - name: Install dependencies and test
+        working-directory: ./client
+        run: yarn install && yarn build 
+        
+        #&& yarn test
+
 
   build:
     needs: test
@@ -48,8 +55,7 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /var/www/zc_plugin_company_shift/
-            sudo git pull origin dev
+            git pull origin dev
             cd server
-            sudo yarn install
-            sudo yarn run build
+            yarn run build
             sudo pm2 restart server
