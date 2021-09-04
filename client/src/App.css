@@ -1,5 +1,9 @@
 /* .App { 
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -115,3 +119,32 @@
   }
 }
 */
+
+.app-chatbot-container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 9999;
+  box-shadow: 5px 5px 13px rgb(91 81 81 / 40%);
+  border-radius: 5px;
+}
+.app-chatbot-button {
+width: 50px;
+height: 50px;
+border-radius: 25px;
+background-color: #1f3646;
+border: none;
+position: fixed;
+bottom: 15px;
+z-index: 9999;
+right: 40px;
+}
+
+.app-chatbot-button-icon {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+}
