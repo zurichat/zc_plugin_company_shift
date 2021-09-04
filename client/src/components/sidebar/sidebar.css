@@ -1,0 +1,27 @@
+.sideBar-container {
+  width: 269px;
+  height: 100%;
+
+  padding-left: max(20px, 1%);
+}
+.sidebar-header {
+  height: 70px;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav-container {
+  height: 50px;
+
+  width: 100%;
+  display: flex;
+  align-items: left;
+  padding: 0px;
+  flex-direction: column;
+}
+
+.zuri-logo-container {
+  width: 100px;
+  height: auto;
+}
