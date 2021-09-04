@@ -31,9 +31,7 @@ jobs:
 
       - name: Install dependencies and test
         working-directory: ./client
-        run: yarn install && yarn build 
-        
-        #&& yarn test
+        run: yarn install && yarn build && yarn test
 
 
   build:
