@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(233, 227, 227);
+    font-family: 'Lato', sans-serif;
+}
+/* .side-bar {
+    height: 900px;
+    width: 269px;
+    position: absolute;
+    left: 0%;
+    right: 81.32%;
+    top: 0%;
+    bottom: -0.22%;
+    background-color: #fff; 
+     background: #0ae227; 
+}*/
+/* .logo {
+    display: flex;
+}
+.zuri-logo {
+   margin: 21px 0px 27px 35px;
+}
+.zuri-text {
+    margin: 26px 0px 33px 8px;
+}
+.list-1, .list-2 {
+    display: flex;
+}
+.list1-image {
+    margin-right: 14px;
+}
+.list2-image {
+    margin-right: 16px; 
+}
+.avatar {
+    border-radius: 100%;
+    background-color: aqua;
+    margin-right: 13px;
+    margin-bottom: 13.55px;
+}
+.list-1 {
+    margin-left: 35px;
+    margin-bottom: 18px;
+}
+.list-2 {
+    margin-left: 59px;
+}
+.p2 {
+    margin-bottom: 12px;
+}
+.p3 {
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.dm {
+    text-transform: capitalize;
+}
+.general-div {
+    display: flex;
+    justify-content: space-between;
+}
+.plus-image {
+    border: 2px solid rgb(158, 154, 154);
+    border-radius: 50%;
+    margin-right: 24px;
+} */
+.rectangle {
+position: absolute;
+left: 918px;
+background: rgba(255, 255, 255, 0.4);
+border: 0.8px solid rgba(153, 153, 153, 0.2);
+box-sizing: border-box;
+
+}
+/* .search {
+color: rgba(53, 37, 37, 0.4);
+width: 68px;
+height: 15px;
+padding-top: 6px;
+
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 15px;
+margin-right: 35px;
+} */
+input {
+    position: absolute;
+    left: 830px;
+    border: 0.2px solid #fff;
+    height: 32px;
+    width: 390px;
+    top: 28px;
+    border-radius: 3px;
+}
+::placeholder {
+    padding-left: 6px;
+}
+.fa-search {
+position: absolute;
+left: 1190px;
+color: #999999;
+margin-top: 35px;
+/* top: 6%; */
+/* bottom: 25%; */
+/* margin-bottom: 15px; */
+cursor: pointer;
+}
+.settings-propic {
+    display: flex;
+    position: absolute;
+    left: 1240px;
+    top: 25px;
+}
+.pro-pic { 
+  background-color: aqua;
+  border-radius: 50%;     
+}
+.setting {
+   padding-right: 20px;
+   padding-top: 10px;
+   
+}
+.heading-background {
+    position: absolute;
+    width: 1180px;
+    height: 115px;
+    top: 79px;
+    left: 270px;
+    background: rgba(168, 166, 166, 0.17);
+}
+.heading-one {
+    position: absolute;
+    width: 352px;
+    height: 52px;
+    margin-left: 33px;
+    margin-top: 31px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 40px;
+}
+.heading-profiles {
+ display: flex;
+}
+.profile-images {
+  position: absolute;
+  top: 45px;
+  left: 400px;
+  
+
+}
+.shift-section {
+    display: flex;
+    justify-content: space-between;
+}
+.buttons {
+    margin-top: 30px;
+    margin-right: 120px;
+   
+}
+.btn1 {
+    background: #FCFCFC;
+    margin-right: 8px;
+    border: 0.6px solid #30C67E;
+    color: #30C67E;
+    padding: 20px 26px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.btn2 {
+    background: #30C67E;
+    border-radius: 3px;
+    
+    border: none;
+    padding: 20px 12px;
+    border-radius: 3px;
+}
+.btn2 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.shift-icon {
+    padding-left: 8px;
+   
+}
+.department-roll {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 305px;
+    top: 234px;
+    
+}
+.first-roll, .second-roll {
+    display: flex;
+}
+.department, .all-status, .all-shifts {
+    margin-right: 10px;
+    background: #FFFFFF;
+    border: 1px solid #E8F0FF;
+    width: 135px;
+    height: 51px;
+    font-size: 14px;
+    font-weight: normal
+    ;
+    text-align: center;
+    padding: 15px 0px 20px 5px;
+    text-transform: capitalize;
+    box-shadow: 3px 3px rgba(143, 141, 141, 0.4);
+    color: #0F0627;
+}
+.second-roll {
+    margin-left: 260px;
+}
+.weekly {
+    width: 95px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #E8F0FF;
+    border-radius: 3px;
+    padding: 9px 0px 10px 20px;
+}
+.two-icons {
+    display: flex;
+    
+    width: 60px;
+    height: 35px;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 16px rgba(136, 136, 136, 0.07);
+    border-radius: 12px;
+    padding: 10px 0px 10px 10px;
+}
+.shift-icon2 {
+    padding-left: 22px;
+}
+.weekly, .date {
+    margin-right: 20px;
+}
+.date {
+   padding: 9px 0px; 
+   font-weight: 600;
+   font-size: 18px;
+}
+.dashboard-header {
+   
+    position: absolute;
+    width: 1170px;
+    height: 55px;
+    left: 270px;
+    top: 325px;
+    background: #F9FAFC;
+ }
+ .dashboard-content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+ }
+ .employee, .num {
+     text-transform: uppercase;
+     font-size: 12px;
+     font-weight: 600;
+ }
+ .employee {
+     padding-top: 20px;
+    
+ }
+ .date1 {
+     padding-top: 10px;
+ }
+ .num {
+     padding-top: 7px;
+ }
+ .mon {
+     text-transform: uppercase;
+     font-size: 12px;
+     font-weight: 500;
+    color: #999999;
+ }
+ .employees-list {
+     position: absolute;
+     left: 280px;
+     top: 420px;
+ }
+ .all-list {
+     display: flex;
+    padding-bottom: 44px;
+ }
+ .names {
+     padding-left: 9px;
+     text-transform: capitalize;
+     font-size: 14px;
+     font-weight: 600;
+     padding-top: 10px;
+ }
+ .images {
+     border-radius: 50%;
+ }
+
+ .dashboard-cards {
+     /* display: grid;
+     grid-template-columns: repeat(6, 1fr);
+     /* grid-column-gap: 2rem; */
+    display: flex;
+     position: absolute;
+   
+     left: 450px;
+     top: 405px;
+ }
+ .card-single {
+    width: 160px;
+    height: 70px;
+    margin-right: 7px;
+    /* left: 440px; */
+    top: 383.18px;
+    
+    background: #E4FFF2;
+    border-radius: 3px;
+ }
+ .duty, .duty1 {
+     display: flex;
+     justify-content: space-between;
+ }
+ .card-body {
+   padding: 8px 9px;
+ }
+ .info {
+     font-size: 14px;
+     line-height: 12px;
+ }
+ .info1 {
+     font-size: 12px;
+ }
+ .duty1 {
+    padding-top: 12px;
+ }
+ .spanish {
+     width: 7px;
+     height: 7px;
+     border-radius: 100%;
+     background-color: rgb(100, 185, 20);
+ }
+ .june {
+     display: flex;
+ }
+ .spanish2 {
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #999999;
+ }
