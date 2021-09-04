@@ -8,14 +8,9 @@ app.use(express.static(path.join(__dirname, "..", "client", "build")));
 
 //app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/api', (req,res)=> {
-  return res.json({
-    message: 'Employee Shift API Success !!!'
-  })
-})
 
 // users route
-app.get('/api/users', (req, res) => {
+app.get('/api', (req, res) => {
   return res.json({
     message: 'Get users route working !!!'
   })
