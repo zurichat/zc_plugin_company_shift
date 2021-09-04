@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import main from './main.css';
+import './main.css';
 //icons
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiSettings } from 'react-icons/fi';
