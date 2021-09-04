@@ -2,6 +2,7 @@ import logo from './company_shift_logo.png';
 import company from './company_shift.png';
 
 import './App.css';
+import { Dashboard } from './components/Dashboard';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <img src={company} className="cs-company_img" alt="Employee Shift"/>
           </div>
       </header>
+    <Dashboard />
       
     </div>
   );
