@@ -1,0 +1,53 @@
+body{
+    font-family:sans-serif;
+    width: 100%;
+}
+input{
+border:none;
+background-color: rgb(180, 183, 185);
+border-radius: 2px;
+padding:.6em;
+width:85%;
+
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+.avatar{
+    height: 70px;
+    border-radius: 50px;
+}
+.Message{
+    background-color: green;
+    color: ivory;
+    border: none;
+    width: 100px;
+    height:50px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 2px;
+
+}
+.content{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.profile{
+    display: inline-flex;
+  
+}
+label{
+    font-weight: bold;
+    font-size: small;
+}
+.stack{
+    color: goldenrod;
+    font-size: 12px;
+}
+.name{
+    font-weight: bolder;
+}
