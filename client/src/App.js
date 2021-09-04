@@ -4,7 +4,6 @@
 import ManagementHome from './pages/shift_management';
 
 import './App.css';
-import { Dashboard } from './components/Dashboard';
 
 function App() {
   return (
