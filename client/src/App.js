@@ -4,6 +4,7 @@
 import ManagementHome from './pages/shift_management';
 
 import './App.css';
+import CreateShift from './components/modal/CreateShift';
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
         </div>
 
       </header>*/}
-      <ManagementHome />
+      {/* <ManagementHome /> */}
+      <CreateShift/>
     </div>
   );
 }
