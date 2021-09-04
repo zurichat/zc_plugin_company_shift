@@ -1,5 +1,5 @@
-import logo from './assets/company_shift_logo.png';
-import company from './assets/company_shift.png';
+//import logo from './assets/company_shift_logo.png';
+//import company from './assets/company_shift.png';
 
 import ManagementHome from './pages/shift_management';
 
