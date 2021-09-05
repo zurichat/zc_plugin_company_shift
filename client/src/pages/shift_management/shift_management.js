@@ -3,17 +3,17 @@ import React from 'react';
 
 import Calendar from '../../components/calendar/calendar';
 import Main from '../../components/main/main';
-import MainSidebar from '../../components/sidebar/Sidebar';
+// import MainSidebar from '../../components/sidebar/Sidebar';
 //css
 import './shift_management.css';
 
 function ManagementHome() {
   return (
     <div className='Management-container'>
-      <MainSidebar></MainSidebar>
+      {/* <MainSidebar></MainSidebar> */}
       <div>
-      <Main></Main>
-      <Calendar />
+        <Main></Main>
+        <Calendar />
       </div>
     </div>
   );
