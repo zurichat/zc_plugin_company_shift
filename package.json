@@ -1,3 +1,5 @@
 {
-  "dependencies": {}
+  "dependencies": {
+    "@syncfusion/ej2-react-schedule": "^19.2.59"
+  }
 }
