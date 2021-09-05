@@ -8,9 +8,15 @@
   
   header {
     display: flex;
+<<<<<<< HEAD
     justify-content: space-around;
     padding-top: 1em;
     margin-left: 2em;
+=======
+    justify-content: space-between;
+    padding-top: 1em;
+    margin-left: 3em;
+>>>>>>> 152b37d52b1e68db46cbe560bead02306dc56549
     margin-right: 3em;
   }
   
@@ -34,11 +40,16 @@
   }
   
    input {
+<<<<<<< HEAD
      margin-left: 8em;
+=======
+     margin-left: 40em;
+>>>>>>> 152b37d52b1e68db46cbe560bead02306dc56549
      padding: 0.5em;
      width: 500px;
      background-color: #F8F8F9;
      border: none;
+<<<<<<< HEAD
      border-radius: 12px;
      outline: none;
      font-family: 'Lato', sans-serif;
@@ -55,6 +66,23 @@
     font-family: 'Lato', sans-serif;
   }
 
+=======
+     border-radius: 5px;
+     outline: none;
+     font-family: 'Lato', sans-serif;
+  }
+
+  .two {
+    display: flex;
+  }
+  
+  .area2 {
+    padding-top: 0.7em;
+    margin-right: 2em;
+  }
+
+
+>>>>>>> 152b37d52b1e68db46cbe560bead02306dc56549
   a:link {
     text-decoration: none;
     cursor: pointer;
@@ -65,6 +93,7 @@
   }
   
   
+<<<<<<< HEAD
   .area3 img {
     width: 20px;
     padding-top: 0.5em;
@@ -84,3 +113,46 @@
   .area4 {
     padding-top: 0.5em;
   }
+=======
+  
+  .area4 {
+    padding-top: 0.5em;
+  }
+
+
+@media only screen and (max-width:600px){
+  input {
+    margin-left: 0px;
+    margin-left: 0%;
+    width: 200px;
+    padding: 0.5em;
+    font-size: 10px;
+  }
+
+  header {
+
+    margin-left: 0%;
+    margin-left: 0px;
+    
+  }
+
+ 
+
+  .logo img {
+    width: 80px;
+    margin-right: 1em;
+    margin-left: 2em;
+    padding-top: 0.3em;
+  }
+
+  .area2 img {
+    display: none; 
+}
+
+.part3 img {
+  display: none;
+}
+
+
+}
+>>>>>>> 152b37d52b1e68db46cbe560bead02306dc56549

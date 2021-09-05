@@ -8,10 +8,11 @@
 
 # testing
 /coverage
-
+yarn-error.log
+node_modules
 # production
 /client/build
-
+.env
 # misc
 .DS_Store
 .env.local
