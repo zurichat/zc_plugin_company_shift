@@ -26,6 +26,6 @@ jobs:
         working-directory: ./client
         run: yarn install && yarn build
 
-      - name: Test Pull request
-        working-directory: ./client
-        run: yarn test
+#       - name: Test Pull request
+#         working-directory: ./client
+#         run: yarn test
