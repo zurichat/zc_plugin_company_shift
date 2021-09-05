@@ -11,7 +11,7 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import Employ from '../../assets/user';
 
 function Main() {
-  const [Employee, setEmployee] = useState(Employ);
+  const [Employee] = useState(Employ);
   return (
     <div className='main-conatiner'>
       <section className='main-header'>

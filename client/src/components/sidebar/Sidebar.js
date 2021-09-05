@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './sidebar.css';
 //image
 import zuriLogo from '../../assets/zuri-logo.svg';
@@ -8,7 +8,6 @@ import Navigation from '../navaigation/Navigation';
 import navContents from '../../assets/nav';
 
 function Sidebar() {
-  const [] = useState();
   return (
     <div className='sideBar-container'>
       <section className='sidebar-header'>
