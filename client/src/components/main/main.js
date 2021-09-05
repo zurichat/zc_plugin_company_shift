@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './main.css';
 //icons
 import { AiOutlineSearch } from 'react-icons/ai';
@@ -11,7 +11,7 @@ import { GoPrimitiveDot } from 'react-icons/go';
 import Employ from '../../assets/user';
 
 function Main() {
-  const [Employee, setEmployee] = useState(Employ);
+  // const [Employee, setEmployee] = useState(Employ);
   return (
     <div className='main-conatiner'>
       <section className='main-header'>
@@ -165,7 +165,7 @@ function Main() {
               <p>SEP1 </p>
             </th>
           </tr>
-          {Employee.map((eachEmployee) => (
+          {Employ.map((eachEmployee) => (
             <tr>
               <td className='profile'>
                 <span>

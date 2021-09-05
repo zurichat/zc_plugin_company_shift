@@ -1,7 +1,7 @@
 import React from 'react';
 //components
 
-import Calendar from '../components/calendar/calendar';
+import Calendar from '../../components/calendar/calendar';
 import Main from '../../components/main/main';
 import MainSidebar from '../../components/sidebar/Sidebar';
 //css
