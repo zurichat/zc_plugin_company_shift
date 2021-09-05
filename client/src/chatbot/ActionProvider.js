@@ -14,7 +14,7 @@ class ActionProvider {
         this.setState((prevState) => ({
             ...prevState,
             messages: [...prevState.messages, message]
-        }))
+        })); 
     }
 }
 
