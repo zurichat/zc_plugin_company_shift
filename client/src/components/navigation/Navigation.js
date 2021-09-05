@@ -9,12 +9,17 @@ function Navigation(props) {
         const {
           text,
           icon,
-
+          //subNav,
+          //hasIcon,
+          //hasImage,
+          //img,
           hasSubNav,
           parentText,
         } = eachItems;
 
         if (!parentText) {
+          //let info = text;
+
           return (
             <div className='navbars-container'>
               {eachItems.multipleIcons ? (
@@ -40,11 +45,15 @@ function Navigation(props) {
                 <div className='text-container'>
                   {props.contents.map((eachs) => {
                     const {
+                      //parentText,
                       icon,
-
+                      //subNav,
+                      //hasIcon,
+                      //hasImage,
+                      //img,
                       text,
                     } = eachs;
-
+                    
                     if (eachItems.text === eachs.parentText) {
                       return (
                         <section className='nav-items'>
@@ -73,8 +82,9 @@ function Navigation(props) {
             </div>
           );
         }
-        return null;
-      })}
+        return null
+      }
+    )}
     </>
   );
 }
