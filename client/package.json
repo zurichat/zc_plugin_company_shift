@@ -4,14 +4,27 @@
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
+    "@fullcalendar/daygrid": "4.0.1",
+    "@fullcalendar/interaction": "4.0.2",
+    "@fullcalendar/react": "4.0.2-beta",
+    "@fullcalendar/timegrid": "4.0.1",
+    "@syncfusion/ej2-react-schedule": "^19.2.59",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
+    "react-big-scheduler": "^0.2.7",
+    "react-dnd": "7.4.5",
+    "react-dnd-html5-backend": "7.4.4",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "9",
+    "postcss": "7",
+    "tailwindcss": "yarn:@tailwindcss/postcss7-compat"
   },
   "scripts": {
     "start": "react-scripts start",
