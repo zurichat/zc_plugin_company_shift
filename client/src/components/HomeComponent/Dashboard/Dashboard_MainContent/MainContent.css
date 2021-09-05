@@ -1,0 +1,70 @@
+/* Dashboard Main Content */
+
+.dashboard-main-content {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-main-content .dashboard-main-content-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.dashboard-main-content .dashboard-main-content-heading form select {
+  /* width: 130px; */
+  height: 56px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  background: #ffffff;
+  color: #0f0627;
+  border: 1px solid #e8f0ff;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.dashboard-main-content-heading-schedule {
+  position: absolute;
+  left: 63%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-main-content-heading-schedule .weekly {
+  background: #ffffff;
+  color: #0f0627;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 6px 18px;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.dashboard-main-content-heading-schedule .time {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 20px 0 15px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.dashboard-main-content-heading-schedule .schedule-shift {
+  background: #ffffff;
+  color: #0f0627;
+  font-weight: 600;
+  padding: 8px;
+  box-shadow: 1px 2px 16px rgba(136, 136, 136, 0.07);
+  border-radius: 12px;
+  font-size: 22px;
+}
+
+.dashboard-main-content-body {
+  width: 100%;
+}

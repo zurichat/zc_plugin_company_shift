@@ -1,0 +1,102 @@
+/* Table Styling */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table tr {
+  padding: 0;
+  width: 100%;
+  height: 62px;
+}
+
+table tr th {
+  padding: 20px 5px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #999999;
+}
+
+table tr th h5 {
+  margin-bottom: 5px;
+}
+
+table tr th span {
+  color: #000000;
+}
+
+table tr th:nth-child(1) {
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.shifts {
+  width: 143px;
+  height: 55px;
+  background: #e4fff2;
+  border-radius: 3px;
+  padding: 10px 8px;
+  font-size: 11px;
+  font-family: "Euclid Circular A";
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shift-status,
+.shift-duration {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 15px;
+  margin-bottom: 8px;
+}
+
+.shift-status .on-duty {
+  color: #00af5b;
+}
+
+.shift-status .off-duty {
+  color: #a5a5a5;
+}
+
+#off-duty {
+  background: #e8f0ff;
+}
+
+#await {
+  background: #fffce2;
+}
+
+#ended {
+  background: #ffe5e5;
+}
+
+.shift-status .ended-shift {
+  color: #ff4550;
+}
+
+.shift-profile-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  width: 155px;
+}
+
+.shift-profile-details img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.shift-profile-details .name {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #000000;
+}

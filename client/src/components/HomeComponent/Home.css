@@ -1,0 +1,11 @@
+.home-content {
+    position: relative;
+    background: #FCFCFC;
+    min-height: 1000px;
+    height: 100%;
+    top: 0;
+    left: 270px;
+    width: calc(100% - 270px);
+    transition: all 0.5s ease;
+    z-index: 2;
+}

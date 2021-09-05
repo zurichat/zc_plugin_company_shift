@@ -1,0 +1,155 @@
+/* Dashboard Header */
+
+.dashboard-header {
+  padding: 0 1rem;
+  height: 115px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(231, 231, 231, 0.17);
+  margin-bottom: 2rem;
+}
+
+.dashboard-header .dashboard-heading {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-header .dashboard-heading h1 {
+  margin-right: 2rem;
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.users-images {
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 2rem;
+}
+
+.users-images img:nth-child(1) {
+  position: absolute;
+  left: -23%;
+  top: -28%;
+  z-index: 99;
+}
+
+.users-images img:nth-child(2) {
+  z-index: 1;
+  left: 10%;
+}
+
+.users-images img:nth-child(3) {
+  position: absolute;
+  left: 33%;
+  top: -28%;
+  z-index: -1;
+}
+
+.users-images img:nth-child(4) {
+  z-index: -10;
+}
+
+.users-images img:nth-child(5) {
+  position: absolute;
+  left: 85%;
+  top: -28%;
+  z-index: -15;
+}
+
+.shift-profile {
+  position: relative;
+}
+
+.shift-profile .user-shift-profile {
+  position: absolute;
+  width: 327px;
+  height: 90px;
+  left: -10%;
+  top: 12%;
+  background: rgba(255, 255, 255, 0.89);
+  box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.05), 3px 3px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  z-index: 99;
+}
+
+.user-shift-profile .user-shift-profile-details {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  position: relative;
+}
+
+.user-shift-profile-details .user-shift-close-icon {
+  position: absolute;
+  left: -6%;
+  top: -15%;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(198, 48, 48, 0.92);
+  display: flex;
+  align-items: center;
+}
+
+.user-shift-profile-details .user-shift-name {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 5px;
+  color: #7b8994;
+}
+
+.user-shift-profile-details .user-shift-name h5 {
+  margin-bottom: 8px;
+}
+
+.user-shift-profile-details .user-shift-name h5 a {
+  color: #1a61db;
+}
+
+.user-shift-profile-details .user-shift-name h5 span {
+  display: inline-block;
+}
+
+.user-shift-profile-details .user-shift-close-icon i {
+  margin: auto;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.user-shift-profile-details .user-shift-image {
+  width: 73px;
+  height: 73px;
+  left: 0;
+  top: 0;
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      #7b8994 0%,
+      rgba(123, 137, 148, 0) 82.94%
+    );
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 20px 0 10px;
+}
+
+.shift-buttons button {
+  width: 150px;
+  height: 56px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background: #ffffff;
+  color: #30c67e;
+  border: 1px solid #30c67e;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.shift-buttons button:nth-child(2) {
+  background: #30c67e;
+  color: #ffffff;
+}
