@@ -1,10 +1,11 @@
 import React from 'react';
 //components
-import Main from '../components/main/main';
-import MainSidebar from '../components/sidebar/Sidebar';
+
 import Calendar from '../components/calendar/calendar';
+import Main from '../../components/main/main';
+import MainSidebar from '../../components/sidebar/Sidebar';
 //css
-import './shitf_management/shift_management.css';
+import './shift_management.css';
 
 function ManagementHome() {
   return (
