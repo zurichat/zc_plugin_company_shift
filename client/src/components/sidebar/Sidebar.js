@@ -3,7 +3,6 @@ import './sidebar.css';
 //image
 import zuriLogo from '../../assets/zuri-logo.svg';
 import Navigation from '../navaigation/Navigation';
-//component
 
 import navContents from '../../assets/nav';
 
