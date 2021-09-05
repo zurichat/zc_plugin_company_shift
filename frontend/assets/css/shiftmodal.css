@@ -1,0 +1,217 @@
+body{
+   font: 1rem 'Fira Sans', sans-serif;
+    background-color: rgb(238, 236, 243);
+}
+
+section{
+  max-width: 500px;
+  margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    width: 90%;
+    font-weight: 400;
+}
+
+#firstline{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+  
+}
+#staffnames{
+    display: flex;
+    flex-direction: column;
+    /* max-width: 100%; */
+    /* margin-top: 10px; */
+}
+
+#staffnames select{
+width: 430px;
+background-color: rgb(127, 228, 144);
+}
+
+#staffnames select,input, label{
+    padding: 5px;
+    margin: .4rem 0;
+    font: 1.1rem 'Fira Sans', sans-serif;
+} 
+#firstline select,input, label{
+  padding: 5px;
+  margin: .4rem 0;
+  font: 1.1rem 'Fira Sans', sans-serif;
+}
+#time1 {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;    
+    
+}
+
+#time1 div{
+   display: block;
+   padding-left: 10px;
+   margin-left: 25px;
+   
+}
+ .hours p{
+  transition: transform .2s;
+     margin-top: auto;
+     font: 1.2rem 'Fira Sans', sans-serif;
+   background-color: rgb(64, 224, 125);
+  
+}
+.hours p:hover{
+  color: red;
+  transform: scale(1.5);
+}
+ 
+.ph2{
+    width: 85%;
+    font-family: cursive;
+}
+
+
+
+#offshift{
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  margin:auto;
+  
+}
+#offshift input{
+  width: 20px;
+
+}
+#Recurrent{
+  background-color: green;
+}
+
+#dotteddate{
+  width: 100%;
+}
+
+.dot { 
+   margin-top: 10px;
+   margin-left: 25px;
+   padding-top: 5px;
+    height: 30px;
+    width: 35px;
+    background-color: rgb(42, 165, 69);
+    border-radius: 60%;
+    display: inline-block;
+    color: rgb(228, 235, 231);
+    border: solid green;
+    transition: transform .2s;
+}
+.dothwhite { 
+  margin-top: 10px;
+  margin-left: 25px;
+  padding-top: 5px;
+   height: 30px;
+   width: 35px;
+   background-color: rgb(237, 230, 243);
+   border-radius: 60%;
+   display: inline-block;
+   color: rgb(11, 180, 81);
+   border: solid green;
+  }
+  .dot:hover,.dothwhite:hover {
+    color: red;
+    transform: scale(1.5);
+  }
+.switch {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 20px;
+    
+ }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: green;
+  }
+  
+   input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  } 
+  
+   input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  #footer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 10px;
+  }
+
+  button{
+    margin-left: 20px;
+    margin-top: 10px;
+    height: 25px;
+    width: auto;
+  }
+
+  #but {
+    background-color: rgb(109, 177, 109);
+    transition: transform .2s;
+  }
+
+  #can{
+    background-color: rgb(245, 92, 92);
+    transition: transform .2s;
+  }
+
+  #but:hover, #can:hover{
+    transform: scale(1.5);
+  }
