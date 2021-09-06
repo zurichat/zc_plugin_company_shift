@@ -1,5 +1,7 @@
 import React from 'react';
 import './main.css';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import CreateShift from '../modal/CreateShift';
 //icons
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiSettings } from 'react-icons/fi';
@@ -77,7 +79,18 @@ function Main() {
               <AiOutlineDown></AiOutlineDown>
             </span>
           </button>
-          <button className='create-btn'>create a new shift</button>
+          {/* <button className='create-btn'
+          
+          >create a new shift</button> */}
+
+          <Router>
+            <button className="create-btn">
+                <Link to="/createshift">create a new shift</Link>
+            </button>
+            <Switch>
+                <Route path="/createShift" component={CreateShift} />
+            </Switch>
+          </Router>
         </div>
       </section>
       <br />
