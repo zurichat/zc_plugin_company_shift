@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-conatiner {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main-header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-input-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.input-box {
+  width: 390px;
+  height: 32px;
+  padding-left: 5px;
+}
+.search-icon-main {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  /* width: 12px; */
+  font-size: 24px;
+}
+.main-settings-icon {
+  font-size: 24px;
+}
+
+.admin-img-holder {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 40px;
+  margin: 10px;
+}
+.admin-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.main-header-wrapper {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.main-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 115px;
+}
+.main-department-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  align-items: center;
+}
+.main-department-items {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-department-date {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-department-items select {
+  max-width: 138px;
+  width: 138px;
+  height: 56px;
+  border-radius: 3px;
+  border: 1px solid rgba(232, 240, 255, 1);
+  background-color: white;
+}
+.main-title-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  font-size: 30px;
+}
+.main-img-container {
+  height: 80%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.main-title-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.main-text-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+}
+
+.main-text-img-2 {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+
+  margin-top: 10px;
+}
+
+.main-title-btns button {
+  width: 138px;
+  height: 56px;
+  border-radius: 3px;
+  border: 0.6px solid rgba(48, 198, 126, 1);
+}
+
+.shift-btn {
+  background-color: #fcfcfc;
+}
+.create-btn {
+  background-color: rgba(48, 198, 126, 1);
+  color: white;
+}
+
+.week-container {
+  width: 95px;
+  height: 36px;
+  border-radius: 3px;
+  border: solid 1px rgba(232, 240, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-container {
+  font-size: 18px;
+}
+.move-btn {
+  width: 70px;
+  height: 50px;
+  box-shadow: 1px 2px 16px 0px rgba(136, 136, 136, 0.07);
+  color: rgba(136, 136, 136, 0.07);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+.move-btn button {
+  border: none;
+  background-color: white;
+  width: 40%;
+  cursor: pointer;
+}
+
+#workers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#workers td,
+#workers th {
+  border-left: 2px solid rgba(232, 240, 255, 1);
+  padding: 8px;
+}
+
+#workers tr:nth-child(even) {
+}
+
+#workers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(249, 250, 252, 1);
+
+  color: black;
+  width: 200px;
+}
+
+.table-user-image-cont {
+  width: 38px;
+  height: 36px;
+  border-radius: 38px;
+  background-color: yellow;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.resume-work {
+  width: 180px;
+  height: 100%;
+  padding: 2px;
+  margin: 1px;
+}
+.resume-shift {
+  display: flex;
+  justify-content: space-between;
+
+  height: 20px;
+  width: 100%;
+}
+.resume-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 20px;
+  width: 100%;
+}
+.resume-icon {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+.shift-text {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.resume-work-time {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+.resume-time-left {
+  display: flex;
+  align-items: center;
+  height: 0%;
+  font-size: 10px;
+}
+
+.profile-text {
+  font-size: 14px;
+}
+@media (max-width: 1000px) {
+  .main-txt {
+    font-size: 0.5em;
+  }
+  .main-department-items select {
+    width: 100px;
+  }
+  .main-title-btns button {
+    width: 200px;
+  }
+}

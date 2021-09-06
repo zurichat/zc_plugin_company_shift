@@ -1,0 +1,31 @@
+name: Test Pipeline
+on:
+   push:
+     branches: [ dev ]
+
+   pull_request:
+     branches: [ dev ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        working-directory: ./client
+        run: yarn install && yarn build
+
+#       - name: Test Pull request
+#         working-directory: ./client
+#         run: yarn test
