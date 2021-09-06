@@ -1,10 +1,11 @@
 import React from 'react';
 import './main.css';
+import { Link } from 'react-router-dom';
+// import CreateShift from '../modal/CreateShift';
 //icons
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiSettings } from 'react-icons/fi';
 import { AiOutlineDown } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 
 
 function Main() {

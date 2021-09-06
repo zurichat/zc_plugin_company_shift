@@ -45,8 +45,6 @@ function App() {
 
       </header>*/}
 
-			<Router>
-
       {showChatbot && (
           <div className='app-chatbot-container'>
             <Chatbot
@@ -72,7 +70,6 @@ function App() {
           <Routes />
         </Router>
 				{/* <CreateShift/> */}
-			</Router>
 		</div>
 	);
 }

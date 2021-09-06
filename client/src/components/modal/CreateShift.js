@@ -3,9 +3,9 @@ import { useState } from "react";
 import "./createshift.css"
 
 const CreateShift = () => {
-   
     const [date, setDate] = useState(false);
     const [isChecked, setIsChecked] = useState(false)
+    
     const handleChange = () => {
        setDate(!date);
        setIsChecked(!isChecked)
@@ -18,10 +18,12 @@ const CreateShift = () => {
                 <div className="overlay">
            
                 </div>
-                <AiIcons.AiOutlineClose 
-                    className="close-btn"
-                    // onClick={(toggleModal)}
-                />
+                <a href="/">
+                    <AiIcons.AiOutlineClose 
+                        className="close-btn"
+                    />
+                </a>
+                
                 <div className="">
                     <div className="container">
                         <h2 className="shift-heading">Create a new Shift</h2>
