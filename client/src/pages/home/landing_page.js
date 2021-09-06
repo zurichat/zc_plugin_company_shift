@@ -6,7 +6,7 @@ import "./landing_page.css";
 
 const Landpage = () => {
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="cs-left-column">
         <div className="cs-logo">
           <img src={logo} className="cs-logo_img" alt="Employee Shift Logo" />

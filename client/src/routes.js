@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, Switch } from "react-router-dom";
-
 import ManagementHome from './pages/shift_management/shift_management'
 import Landpage from './pages/home/landing_page';
 
