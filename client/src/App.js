@@ -1,15 +1,14 @@
-//import logo from './assets/company_shift_logo.png';
-//import company from './assets/company_shift.png';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-// import ManagementHome from './pages/shift_management';
+import logo from './assets/company_shift_logo.png';
+import company from './assets/company_shift.png';
+import ManagementHome from './pages/shift_management';
+
 
 import './App.css';
-import CreateShift from './components/modal/CreateShift';
 
 function App() {
   return (
     <div className='App'>
-      {/* <header className='App-header' style={{ display: 'none' }}> 
+      <header className='App-header' style={{ display: 'none' }}> 
         <div className='cs-left split'>
           <div className='cs-logo'>
             <img src={logo} className='cs-logo_img' alt='Employee Shift Logo' />
@@ -27,15 +26,8 @@ function App() {
           <img src={company} className='cs-company_img' alt='Employee Shift' />
         </div>
 
-      </header>*/}
-      <Router>
-      <Link to="/createshift">Create Shift</Link>
-        <Switch>
-            <Route path="/createShift" component={CreateShift} />
-        </Switch>
-        {/* <CreateShift/> */}
-
-      </Router>
+      </header>
+      <ManagementHome/>
     </div>
   );
 }
