@@ -3833,8 +3833,8 @@
         "Id": 24,
         "Subject": "Board Meeting",
         "Description": "Meeting to discuss business plans.",
-        "StartTime": "2021-09-06T11:00:00.000Z",
-        "EndTime": "2021-09-06T12:30:00.000Z",
+        "StartTime": "2021-09-05T11:00:00.000Z",
+        "EndTime": "2021-09-05T12:30:00.000Z",
         "RoomId": 10
     }, {
         "Id": 25,
@@ -3861,190 +3861,190 @@
         "Id": 28,
         "Subject": "Board Meeting",
         "Description": "Meeting to discuss business goal of 2018.",
-        "StartTime": "2021-09-06T03:30:00.000Z",
-        "EndTime": "2021-09-06T05:30:00.000Z",
+        "StartTime": "2021-09-05T03:30:00.000Z",
+        "EndTime": "2021-09-05T05:30:00.000Z",
         "RoomId": 1
     }, {
         "Id": 29,
         "Subject": "Training session on JSP",
         "Description": "Knowledge sharing on JSP topics.",
-        "StartTime": "2021-09-06T11:30:00.000Z",
-        "EndTime": "2021-09-06T14:30:00.000Z",
+        "StartTime": "2021-09-05T11:30:00.000Z",
+        "EndTime": "2021-09-05T14:30:00.000Z",
         "RoomId": 6
     }, {
         "Id": 30,
         "Subject": "Sprint Planning with Team members",
         "Description": "Planning tasks for sprint.",
-        "StartTime": "2021-09-06T05:00:00.000Z",
-        "EndTime": "2021-09-06T06:30:00.000Z",
+        "StartTime": "2021-09-05T05:00:00.000Z",
+        "EndTime": "2021-09-05T06:30:00.000Z",
         "RoomId": 2
     }, {
         "Id": 31,
         "Subject": "Meeting with Client",
         "Description": "Customer meeting to discuss features.",
-        "StartTime": "2021-09-06T12:30:00.000Z",
-        "EndTime": "2021-09-06T14:30:00.000Z",
+        "StartTime": "2021-09-05T12:30:00.000Z",
+        "EndTime": "2021-09-05T14:30:00.000Z",
         "RoomId": 8
     }, {
         "Id": 32,
         "Subject": "Support Meeting with Managers",
         "Description": "Meeting to discuss support plan.",
-        "StartTime": "2021-09-06T10:30:00.000Z",
-        "EndTime": "2021-09-06T12:00:00.000Z",
+        "StartTime": "2021-09-05T10:30:00.000Z",
+        "EndTime": "2021-09-05T12:00:00.000Z",
         "RoomId": 7
     }, {
         "Id": 33,
         "Subject": "Training session on C#",
         "Description": "Training session",
-        "StartTime": "2021-09-06T09:00:00.000Z",
-        "EndTime": "2021-09-06T10:30:00.000Z",
+        "StartTime": "2021-09-05T09:00:00.000Z",
+        "EndTime": "2021-09-05T10:30:00.000Z",
         "RoomId": 2
     }, {
         "Id": 34,
         "Subject": "Client Meeting",
         "Description": "Meeting to discuss client requirements.",
-        "StartTime": "2021-09-06T05:00:00.000Z",
-        "EndTime": "2021-09-06T07:30:00.000Z",
+        "StartTime": "2021-09-05T05:00:00.000Z",
+        "EndTime": "2021-09-05T07:30:00.000Z",
         "RoomId": 3
     }, {
         "Id": 35,
         "Subject": "Appraisal Meeting",
         "Description": "Meeting to discuss employee appraisals.",
-        "StartTime": "2021-09-06T09:30:00.000Z",
-        "EndTime": "2021-09-06T11:00:00.000Z",
+        "StartTime": "2021-09-05T09:30:00.000Z",
+        "EndTime": "2021-09-05T11:00:00.000Z",
         "RoomId": 8
     }, {
         "Id": 36,
         "Subject": "HR Meeting",
         "Description": "Meeting to discuss HR plans.",
-        "StartTime": "2021-09-06T04:00:00.000Z",
-        "EndTime": "2021-09-06T06:00:00.000Z",
+        "StartTime": "2021-09-05T04:00:00.000Z",
+        "EndTime": "2021-09-05T06:00:00.000Z",
         "RoomId": 4
     }, {
         "Id": 37,
         "Subject": "Customer Meeting",
         "Description": "Meeting to discuss customer reported issues.",
-        "StartTime": "2021-09-06T04:30:00.000Z",
-        "EndTime": "2021-09-06T06:30:00.000Z",
+        "StartTime": "2021-09-05T04:30:00.000Z",
+        "EndTime": "2021-09-05T06:30:00.000Z",
         "RoomId": 9
     }, {
         "Id": 38,
         "Subject": "Board Meeting",
         "Description": "Meeting to discuss business plans.",
-        "StartTime": "2021-09-06T09:30:00.000Z",
-        "EndTime": "2021-09-06T11:30:00.000Z",
+        "StartTime": "2021-09-05T09:30:00.000Z",
+        "EndTime": "2021-09-05T11:30:00.000Z",
         "RoomId": 4
     }, {
         "Id": 39,
         "Subject": "Training session on Vue",
         "Description": "Knowledge sharing on Vue concepts.",
-        "StartTime": "2021-09-06T03:30:00.000Z",
-        "EndTime": "2021-09-06T05:00:00.000Z",
+        "StartTime": "2021-09-05T03:30:00.000Z",
+        "EndTime": "2021-09-05T05:00:00.000Z",
         "RoomId": 5
     }, {
         "Id": 40,
         "Subject": "Meeting with Team members",
         "Description": "Meeting to discuss on work report.",
-        "StartTime": "2021-09-06T06:00:00.000Z",
-        "EndTime": "2021-09-06T07:00:00.000Z",
+        "StartTime": "2021-09-05T06:00:00.000Z",
+        "EndTime": "2021-09-05T07:00:00.000Z",
         "RoomId": 5
     }, {
         "Id": 41,
         "Subject": "Meeting with General Manager",
         "Description": "Meeting to discuss support plan.",
-        "StartTime": "2021-09-06T08:30:00.000Z",
-        "EndTime": "2021-09-06T10:30:00.000Z",
+        "StartTime": "2021-09-05T08:30:00.000Z",
+        "EndTime": "2021-09-05T10:30:00.000Z",
         "RoomId": 10
     }, {
         "Id": 43,
         "Subject": "HR Meeting",
         "Description": "Meeting to discuss HR plans.",
-        "StartTime": "2021-09-06T12:30:00.000Z",
-        "EndTime": "2021-09-06T14:30:00.000Z",
+        "StartTime": "2021-09-05T12:30:00.000Z",
+        "EndTime": "2021-09-05T14:30:00.000Z",
         "RoomId": 2
     }, {
         "Id": 44,
         "Subject": "HR Meeting",
         "Description": "Meeting to discuss HR plans.",
-        "StartTime": "2021-09-06T12:00:00.000Z",
-        "EndTime": "2021-09-06T14:30:00.000Z",
+        "StartTime": "2021-09-05T12:00:00.000Z",
+        "EndTime": "2021-09-05T14:30:00.000Z",
         "RoomId": 1
     }, {
         "Id": 45,
         "Subject": "Client Meeting",
         "Description": "Meeting to discuss client requirements.",
-        "StartTime": "2021-09-06T11:00:00.000Z",
-        "EndTime": "2021-09-06T12:30:00.000Z",
+        "StartTime": "2021-09-05T11:00:00.000Z",
+        "EndTime": "2021-09-05T12:30:00.000Z",
         "RoomId": 3
     }, {
         "Id": 46,
         "Subject": "Board Meeting",
         "Description": "Meeting to discuss business plans.",
-        "StartTime": "2021-09-06T13:00:00.000Z",
-        "EndTime": "2021-09-06T14:30:00.000Z",
+        "StartTime": "2021-09-05T13:00:00.000Z",
+        "EndTime": "2021-09-05T14:30:00.000Z",
         "RoomId": 4
     }, {
         "Id": 47,
         "Subject": "Board Meeting",
         "Description": "Meeting to discuss business plans.",
-        "StartTime": "2021-09-06T10:00:00.000Z",
-        "EndTime": "2021-09-06T12:30:00.000Z",
+        "StartTime": "2021-09-05T10:00:00.000Z",
+        "EndTime": "2021-09-05T12:30:00.000Z",
         "RoomId": 5
     }, {
         "Id": 48,
         "Subject": "HR Meeting",
         "Description": "Meeting to discuss HR plans.",
-        "StartTime": "2021-09-06T13:00:00.000Z",
-        "EndTime": "2021-09-06T14:30:00.000Z",
+        "StartTime": "2021-09-05T13:00:00.000Z",
+        "EndTime": "2021-09-05T14:30:00.000Z",
         "RoomId": 5
     }, {
         "Id": 49,
         "Subject": "HR Meeting",
         "Description": "Meeting to discuss HR plans.",
-        "StartTime": "2021-09-06T09:00:00.000Z",
-        "EndTime": "2021-09-06T10:30:00.000Z",
+        "StartTime": "2021-09-05T09:00:00.000Z",
+        "EndTime": "2021-09-05T10:30:00.000Z",
         "RoomId": 6
     }, {
         "Id": 50,
         "Subject": "Board Meeting",
         "Description": "Meeting to discuss business plans.",
-        "StartTime": "2021-09-06T04:00:00.000Z",
-        "EndTime": "2021-09-06T06:30:00.000Z",
+        "StartTime": "2021-09-05T04:00:00.000Z",
+        "EndTime": "2021-09-05T06:30:00.000Z",
         "RoomId": 6
     }, {
         "Id": 51,
         "Subject": "Client Meeting",
         "Description": "Meeting to discuss client requirements.",
-        "StartTime": "2021-09-06T05:00:00.000Z",
-        "EndTime": "2021-09-06T06:30:00.000Z",
+        "StartTime": "2021-09-05T05:00:00.000Z",
+        "EndTime": "2021-09-05T06:30:00.000Z",
         "RoomId": 7
     }, {
         "Id": 52,
         "Subject": "Appraisal Meeting",
         "Description": "Meeting to discuss employee appraisals.",
-        "StartTime": "2021-09-06T12:30:00.000Z",
-        "EndTime": "2021-09-06T14:00:00.000Z",
+        "StartTime": "2021-09-05T12:30:00.000Z",
+        "EndTime": "2021-09-05T14:00:00.000Z",
         "RoomId": 7
     }, {
         "Id": 53,
         "Subject": "Support Meeting with Managers",
         "Description": "Meeting to discuss support plan.",
-        "StartTime": "2021-09-06T10:00:00.000Z",
-        "EndTime": "2021-09-06T11:30:00.000Z",
+        "StartTime": "2021-09-05T10:00:00.000Z",
+        "EndTime": "2021-09-05T11:30:00.000Z",
         "RoomId": 9
     }, {
         "Id": 54,
         "Subject": "Support Meeting with Managers",
         "Description": "Meeting to discuss support plan.",
-        "StartTime": "2021-09-06T05:30:00.000Z",
-        "EndTime": "2021-09-06T07:00:00.000Z",
+        "StartTime": "2021-09-05T05:30:00.000Z",
+        "EndTime": "2021-09-05T07:00:00.000Z",
         "RoomId": 8
     }, {
         "Id": 55,
         "Subject": "Support Meeting with Managers",
         "Description": "Meeting to discuss support plan.",
-        "StartTime": "2021-09-06T05:30:00.000Z",
-        "EndTime": "2021-09-06T07:00:00.000Z",
+        "StartTime": "2021-09-05T05:30:00.000Z",
+        "EndTime": "2021-09-05T07:00:00.000Z",
         "RoomId": 10
     }, {
         "Id": 56,
@@ -4300,8 +4300,8 @@
     "hospitalData": [{
         "Id": 10,
         "Name": "David",
-        "StartTime": "2021-09-06T03:30:00.000Z",
-        "EndTime": "2021-09-06T04:30:00.000Z",
+        "StartTime": "2021-09-05T03:30:00.000Z",
+        "EndTime": "2021-09-05T04:30:00.000Z",
         "Description": "Health Checkup",
         "DepartmentID": 1,
         "ConsultantID": 1,
@@ -4309,8 +4309,8 @@
     }, {
         "Id": 11,
         "Name": "John",
-        "StartTime": "2021-09-06T05:00:00.000Z",
-        "EndTime": "2021-09-06T06:00:00.000Z",
+        "StartTime": "2021-09-05T05:00:00.000Z",
+        "EndTime": "2021-09-05T06:00:00.000Z",
         "Description": "Tooth Erosion",
         "DepartmentID": 2,
         "ConsultantID": 2,
@@ -4318,8 +4318,8 @@
     }, {
         "Id": 12,
         "Name": "Peter",
-        "StartTime": "2021-09-06T06:30:00.000Z",
-        "EndTime": "2021-09-06T07:30:00.000Z",
+        "StartTime": "2021-09-05T06:30:00.000Z",
+        "EndTime": "2021-09-05T07:30:00.000Z",
         "Description": "Eye and Spectacles Checkup",
         "DepartmentID": 1,
         "ConsultantID": 3,
@@ -4327,8 +4327,8 @@
     }, {
         "Id": 13,
         "Name": "Starc",
-        "StartTime": "2021-09-06T08:30:00.000Z",
-        "EndTime": "2021-09-06T09:30:00.000Z",
+        "StartTime": "2021-09-05T08:30:00.000Z",
+        "EndTime": "2021-09-05T09:30:00.000Z",
         "Description": "Toothaches",
         "DepartmentID": 2,
         "ConsultantID": 4,
@@ -4336,8 +4336,8 @@
     }, {
         "Id": 14,
         "Name": "James",
-        "StartTime": "2021-09-06T04:30:00.000Z",
-        "EndTime": "2021-09-06T05:30:00.000Z",
+        "StartTime": "2021-09-05T04:30:00.000Z",
+        "EndTime": "2021-09-05T05:30:00.000Z",
         "Description": "Surgery Appointment",
         "DepartmentID": 1,
         "ConsultantID": 5,
@@ -4345,8 +4345,8 @@
     }, {
         "Id": 15,
         "Name": "Jercy",
-        "StartTime": "2021-09-06T04:00:00.000Z",
-        "EndTime": "2021-09-06T05:00:00.000Z",
+        "StartTime": "2021-09-05T04:00:00.000Z",
+        "EndTime": "2021-09-05T05:00:00.000Z",
         "Description": "Tooth Sensitivity",
         "DepartmentID": 2,
         "ConsultantID": 6,
@@ -4479,24 +4479,24 @@
     "blockData": [{
         "Id": 1,
         "Subject": "Not Available",
-        "StartTime": "2021-09-06T04:30:00.000Z",
-        "EndTime": "2021-09-06T06:30:00.000Z",
+        "StartTime": "2021-09-05T04:30:00.000Z",
+        "EndTime": "2021-09-05T06:30:00.000Z",
         "IsAllDay": false,
         "IsBlock": true,
         "EmployeeId": 1
     }, {
         "Id": 2,
         "Subject": "Not Available",
-        "StartTime": "2021-09-06T10:30:00.000Z",
-        "EndTime": "2021-09-06T14:30:00.000Z",
+        "StartTime": "2021-09-05T10:30:00.000Z",
+        "EndTime": "2021-09-05T14:30:00.000Z",
         "IsAllDay": false,
         "IsBlock": true,
         "EmployeeId": 2
     }, {
         "Id": 3,
         "Subject": "Not Available",
-        "StartTime": "2021-09-06T06:30:00.000Z",
-        "EndTime": "2021-09-06T08:30:00.000Z",
+        "StartTime": "2021-09-05T06:30:00.000Z",
+        "EndTime": "2021-09-05T08:30:00.000Z",
         "IsAllDay": false,
         "IsBlock": true,
         "EmployeeId": 3
@@ -4541,15 +4541,15 @@
     }, {
         "Id": 11,
         "Subject": "Employee Recruitment",
-        "StartTime": "2021-09-06T04:30:00.000Z",
-        "EndTime": "2021-09-06T07:30:00.000Z",
+        "StartTime": "2021-09-05T04:30:00.000Z",
+        "EndTime": "2021-09-05T07:30:00.000Z",
         "IsAllDay": false,
         "EmployeeId": 5
     }, {
         "Id": 12,
-        "Subject": "Content Analyzing",
-        "StartTime": "2021-09-06T09:30:00.000Z",
-        "EndTime": "2021-09-06T11:30:00.000Z",
+        "Subject": "Data Analyzing",
+        "StartTime": "2021-09-05T09:30:00.000Z",
+        "EndTime": "2021-09-05T11:30:00.000Z",
         "IsAllDay": false,
         "EmployeeId": 6
     }, {
@@ -4562,8 +4562,8 @@
     }, {
         "Id": 14,
         "Subject": "Meeting",
-        "StartTime": "2021-09-06T03:30:00.000Z",
-        "EndTime": "2021-09-06T05:30:00.000Z",
+        "StartTime": "2021-09-05T03:30:00.000Z",
+        "EndTime": "2021-09-05T05:30:00.000Z",
         "IsAllDay": false,
         "EmployeeId": 4
     }, {
@@ -4582,41 +4582,6 @@
         "IsAllDay": false,
         "IsBlock": true,
         "EmployeeId": 3
-    }, {
-        "Id": 17,
-        "Subject": "Data Analyzing",
-        "StartTime": "2021-09-06T09:30:00.000Z",
-        "EndTime": "2021-09-06T11:30:00.000Z",
-        "IsAllDay": false,
-        "EmployeeId": 5
-    }, {
-        "Id": 18,
-        "Subject": "Meeting",
-        "StartTime": "2021-09-06T11:30:00.000Z",
-        "EndTime": "2021-09-06T13:30:00.000Z",
-        "IsAllDay": false,
-        "EmployeeId": 3
-    }, {
-        "Id": 19,
-        "Subject": "Review with Editor",
-        "StartTime": "2021-09-06T13:30:00.000Z",
-        "EndTime": "2021-09-06T15:30:00.000Z",
-        "IsAllDay": false,
-        "EmployeeId": 1
-    }, {
-        "Id": 20,
-        "Subject": "Design UI",
-        "StartTime": "2021-09-06T08:00:00.000Z",
-        "EndTime": "2021-09-06T10:00:00.000Z",
-        "IsAllDay": false,
-        "EmployeeId": 2
-    }, {
-        "Id": 21,
-        "Subject": "Maintenance",
-        "StartTime": "2021-09-06T13:30:00.000Z",
-        "EndTime": "2021-09-06T16:30:00.000Z",
-        "IsAllDay": false,
-        "EmployeeId": 4
     }],
     "resourceSampleData": [{
         "Id": 1,
