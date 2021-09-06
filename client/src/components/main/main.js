@@ -4,11 +4,7 @@ import './main.css';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiSettings } from 'react-icons/fi';
 import { AiOutlineDown } from 'react-icons/ai';
-import { IoChevronBackOutline } from 'react-icons/io5';
-import { IoChevronForward } from 'react-icons/io5';
-import { GoPrimitiveDot } from 'react-icons/go';
-//images
-import Employ from '../../assets/user';
+
 
 function Main() {
   // const [Employee, setEmployee] = useState(Employ);
