@@ -15,7 +15,7 @@ function Main() {
   return (
     <div className='main-conatiner'>
       <section className='main-header'>
-        <div class='main-header-wrapper'>
+        <div classname='main-header-wrapper'>
           <div className='main-input-container'>
             <input className='input-box' type='text' placeholder='search' />
             <span className='search-icon-main'>

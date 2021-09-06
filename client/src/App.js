@@ -1,15 +1,8 @@
-<<<<<<< HEAD
-import logo from './company_shift_logo.png';
-import company from './company_shift.png';
-import Modal from './components/modal/Modal'
-
 import './App.css'; 
-=======
 //import logo from './assets/company_shift_logo.png';
 //import company from './assets/company_shift.png';
 
 import ManagementHome from './pages/shift_management';
->>>>>>> 8cb9d623533445e00d8885e880d20cc56e7401a0
 
 
 function App() {
@@ -26,7 +19,6 @@ function App() {
 
             <p className='cs-built'>Bulit by team curies</p>
 
-<<<<<<< HEAD
               <button className="cs-button"git >Get started</button>
           </div>
         </div>
@@ -36,7 +28,6 @@ function App() {
       </header>
       <Modal />
       
-=======
             <button className='cs-button'>Get started</button>
           </div>
         </div>
@@ -46,7 +37,6 @@ function App() {
 
       </header>*/}
       <ManagementHome />
->>>>>>> 8cb9d623533445e00d8885e880d20cc56e7401a0
     </div>
   );
 }
