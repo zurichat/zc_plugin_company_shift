@@ -1,6 +1,6 @@
 import * as AiIcons from 'react-icons/ai';
 import { useState } from "react";
-import createshift from "./createshift.css"
+import "./createshift.css"
 
 const CreateShift = () => {
    

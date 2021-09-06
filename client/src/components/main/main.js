@@ -4,6 +4,7 @@ import './main.css';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { FiSettings } from 'react-icons/fi';
 import { AiOutlineDown } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 
 function Main() {
@@ -77,7 +78,7 @@ function Main() {
               <AiOutlineDown></AiOutlineDown>
             </span>
           </button>
-          <button className='create-btn'>create a new shift</button>
+          <Link to='/createshift'><button className='create-btn'>create a new shift</button></Link>
         </div>
       </section>
       <br />
