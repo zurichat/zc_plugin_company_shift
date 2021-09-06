@@ -33,15 +33,14 @@ function App() {
           </div>
           <div>
             <h2 className='cs-head'>Shift Management simplified - Task 18</h2>
-
             <p className='cs-built'>Bulit by team curies</p>
-
             <button className='cs-button'>Get started</button>
           </div>
         </div>
         <div className='cs-right split'>
           <img src={company} className='cs-company_img' alt='Employee Shift' />
         </div>
+<<<<<<< HEAD
 
       </header>
       <ManagementHome/>
@@ -50,6 +49,8 @@ function App() {
 }
 
 export default App;
+=======
+>>>>>>> refs/remotes/origin/devbash
       </header>*/}
 
       {showChatbot && (
