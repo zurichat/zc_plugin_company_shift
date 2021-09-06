@@ -1,117 +1,144 @@
-.App { 
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
+.cs-left-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem;
+  margin-top: -8rem;
 }
 
-.App-link {
-  color: #61dafb;
+.cs-right-column {
+ display: block;
+ padding: 1rem;
 }
 
-/* .split {
+.cs-right-column img {
+  width: 100%;
   height: 100%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-} */
-
-.cs-left {
- left: 0; 
+  object-fit: contain;
 }
 
-.cs-right {
-   right: 0; 
-  margin-left: 800px;
-}
-.cs-name {
-  position: absolute;
-  left: 9.58%;
-  right: 86.67%;
-  top: 5.89%;
-  bottom: 91.89%;
-
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 20px;
-  /* identical to box height, or 80% */
-
-  letter-spacing: -0.06em;
-
-  color: #1b1b1d;
+.cs-logo img {
+  width: 155px;
+  height: auto;
 }
 
-.cs-built {
-  position: absolute;
-  left: 6.94%;
-  right: 81.46%;
-  top: 39.78%;
-  bottom: 57.67%;
-
-  font-family: Euclid Circular A;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 23px;
-  /* identical to box height */
-
-  color: #4f5954;
-}
-.cs-head {
-  position: absolute;
-  left: 6.94%;
-  right: 45.07%;
-  top: 20.67%;
-  bottom: 62.44%;
-  font-family: Euclid Circular A;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 76px;
-  color: #000000;
+.cs-description h1{
+  font-weight: 700;
+  transition: 1s all ease;
+  line-height: 1.7;
 }
 
-.cs-button {
-  position: absolute;
-  width: 216px;
-  height: 60px;
-  left: 100px;
-  top: 421px;
-  background: #30c67e;
-  color: #ffffff;
-  border-radius: 12px;
+.cs-description p {
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cs-description .cs-button {
+  width: 150px;
+    height: 56px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    background: #30c67e;
+    color: #fff;
+    border: 1px solid #30c67e;
+    border-radius: 3px;
+    transition: .2s all ease;
+}
+
+.cs-description .cs-button:hover {
+  background: #fff;
+  color: #30c67e;
+  transition: .2s all ease;
+}
+
+@media (min-width: 476px) and (max-width: 768px) {
+  .container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .cs-left-column {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
   }
+
+  .cs-right-column {
+    opacity: 1;
+  }
+
+  .cs-right-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cs-logo img {
+    width: 100%;
+  }
+
+  .cs-description h1{
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 35px;
+  }
+  
+  .cs-description p {
+    font-size: 25px;
+  }
+
 }
 
+@media (min-width: 275px) and (max-width: 475px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cs-left-column {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .cs-right-column {
+    opacity: 1;
+  }
+
+  .cs-right-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cs-logo img {
+    width: 100%;
+  }
+  
+  .cs-description h1{
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 25px;
+  }
+  
+  .cs-description p {
+    font-size: 15px;
+  }
+
+}
