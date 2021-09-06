@@ -1,14 +1,17 @@
-import logo from './assets/company_shift_logo.png';
-import company from './assets/company_shift.png';
-import ManagementHome from './pages/shift_management';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 
-import './App.css';
+import logo from '../../assets/company_shift_logo.png';
+import company from '../../assets/company_shift.png';
 
-function App() {
+
+import './landing_page.css';
+
+const Landpage = () => {
   return (
     <div className='App'>
-      <header className='App-header' style={{ display: 'none' }}> 
+      <header className='App-header'> 
         <div className='cs-left split'>
           <div className='cs-logo'>
             <img src={logo} className='cs-logo_img' alt='Employee Shift Logo' />
@@ -19,7 +22,7 @@ function App() {
 
             <p className='cs-built'>Bulit by team curies</p>
 
-            <button className='cs-button'>Get started</button>
+            <Link to="/dashboard" className='cs-button'>Get started</Link>
           </div>
         </div>
         <div className='cs-right split'>
@@ -27,8 +30,8 @@ function App() {
         </div>
 
       </header>
-      <ManagementHome/>
     </div>
   );
+}
 
-export default App
+export default Landpage;
