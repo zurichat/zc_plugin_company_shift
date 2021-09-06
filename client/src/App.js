@@ -1,14 +1,14 @@
-import './App.css'; 
-//import logo from './assets/company_shift_logo.png';
-//import company from './assets/company_shift.png';
-
+import logo from './assets/company_shift_logo.png';
+import company from './assets/company_shift.png';
 import ManagementHome from './pages/shift_management';
 
+
+import './App.css';
 
 function App() {
   return (
     <div className='App'>
-      {/* <header className='App-header' style={{ display: 'none' }}> 
+      <header className='App-header' style={{ display: 'none' }}> 
         <div className='cs-left split'>
           <div className='cs-logo'>
             <img src={logo} className='cs-logo_img' alt='Employee Shift Logo' />
@@ -35,10 +35,9 @@ function App() {
           <img src={company} className='cs-company_img' alt='Employee Shift' />
         </div>
 
-      </header>*/}
-      <ManagementHome />
+      </header>
+      <ManagementHome/>
     </div>
   );
-}
 
-export default App;
+export default App

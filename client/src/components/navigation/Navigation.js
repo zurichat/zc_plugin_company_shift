@@ -9,16 +9,16 @@ function Navigation(props) {
         const {
           text,
           icon,
-          subNav,
-          hasIcon,
-          hasImage,
-          img,
+          //subNav,
+          //hasIcon,
+          //hasImage,
+          //img,
           hasSubNav,
           parentText,
         } = eachItems;
 
         if (!parentText) {
-          let info = text;
+          //let info = text;
 
           return (
             <div className='navbars-container'>
@@ -45,20 +45,15 @@ function Navigation(props) {
                 <div className='text-container'>
                   {props.contents.map((eachs) => {
                     const {
-                      parentText,
+                      //parentText,
                       icon,
-                      subNav,
-                      hasIcon,
-                      hasImage,
-                      img,
+                      //subNav,
+                      //hasIcon,
+                      //hasImage,
+                      //img,
                       text,
                     } = eachs;
-                    let a = parentText;
-                    console.log(info, 'inf');
-                    console.log(eachs.parentText, 'parentTex');
-                    let pt = eachs.parentText;
-                    let b = info;
-
+                    
                     if (eachItems.text === eachs.parentText) {
                       return (
                         <section className='nav-items'>
@@ -87,7 +82,9 @@ function Navigation(props) {
             </div>
           );
         }
-      })}
+        return null
+      }
+    )}
     </>
   );
 }
