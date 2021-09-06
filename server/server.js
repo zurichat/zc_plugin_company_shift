@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-
+const employees = require("./data/employees")
 
 const app = express();
 
@@ -17,6 +17,10 @@ app.get('/api', (req,res)=> {
   return res.json({
     message: 'Employee Shift API Success!!!'
   })
+})
+
+app.get('/api/employees', (req,res)=> {
+  return res.json(employees)
 })
 
 
