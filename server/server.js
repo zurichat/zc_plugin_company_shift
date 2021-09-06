@@ -19,6 +19,31 @@ app.get('/api', (req,res)=> {
   })
 })
 
+// categories employees roles api issue #97
+app.get('/api/users', (req,res)=> {
+  return res.json([
+    {
+      id: 1,
+      name: 'Ushahemba Shir',
+      title: 'Back end dev'
+    },
+    {
+      id: 2,
+      name: 'Solomon Ifianyi',
+      title: 'Back end dev'
+    },
+    {
+      id: 3,
+      name: 'Depecode',
+      title: 'Front end dev'
+    },
+    {
+      id: 4,
+      name: 'John',
+      title: 'Dev ops'
+    }
+  ])
+})
 
 
 //render react app index.html
