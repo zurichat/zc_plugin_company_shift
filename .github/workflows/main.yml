@@ -31,7 +31,7 @@ jobs:
 
       - name: Install dependencies and test
         working-directory: ./client
-        run: yarn install && yarn build && yarn test
+        run: yarn install && yarn build
 
 
   build:
@@ -57,3 +57,4 @@ jobs:
             cd server
             yarn run build
             sudo pm2 restart server
+
