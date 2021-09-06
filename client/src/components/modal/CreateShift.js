@@ -1,12 +1,13 @@
 import * as AiIcons from 'react-icons/ai';
 import { useState } from "react";
 import createshift from "./createshift.css"
+// import { Link} from "react-router-dom"
 
 const CreateShift = () => {
-    const [modal, setModal] = useState(false);
-    const toggleModal = () => {
-        setModal(!modal);
-    }
+    // const [modal, setModal] = useState(false);
+    // const toggleModal = () => {
+    //     setModal(!modal);
+    // }
     const [date, setDate] = useState(false);
     const [isChecked, setIsChecked] = useState(false)
     const handleChange = () => {
@@ -16,21 +17,21 @@ const CreateShift = () => {
     }
     return ( 
         <div className="body-container">
-        <button
-        className="btn"
-        onClick={toggleModal}
+        {/* <button
+            className="btn"
+            onClick={toggleModal}
         >
-            Click me
-        </button>
+                Click me
+        </button> */}
         
-        {modal&& (
-            <form className="outer-container">
+        {/* {modal&& ( */}
+            <form className="outer-container" >
                 <div className="overlay">
            
                 </div>
                 <AiIcons.AiOutlineClose 
                     className="close-btn"
-                    onClick={toggleModal}
+                    // onClick={(toggleModal)}
                 />
                 <div className="">
                     <div className="container">
@@ -116,7 +117,7 @@ const CreateShift = () => {
                     </div>
                 </div>
             </form>
-        )}
+        {/* )} */}
         
     </div>
      );

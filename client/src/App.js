@@ -1,10 +1,13 @@
 //import logo from './assets/company_shift_logo.png';
 //import company from './assets/company_shift.png';
-
-import ManagementHome from './pages/shift_management';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+// import ManagementHome from './pages/shift_management';
 
 import './App.css';
 import CreateShift from './components/modal/CreateShift';
+import Nav from './components/modal/Nav';
+// import Navigation from './components/navaigation/Navigation';
+// import Home from './Home'
 
 function App() {
   return (
@@ -28,8 +31,14 @@ function App() {
         </div>
 
       </header>*/}
-      {/* <ManagementHome /> */}
-      <CreateShift/>
+      <Router>
+        <Nav/>
+        <Switch>
+            <Route path="/createShift" component={CreateShift} />
+        </Switch>
+        {/* <CreateShift/> */}
+
+      </Router>
     </div>
   );
 }
