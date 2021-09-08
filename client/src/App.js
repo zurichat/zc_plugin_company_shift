@@ -40,6 +40,17 @@ function App() {
         <div className='cs-right split'>
           <img src={company} className='cs-company_img' alt='Employee Shift' />
         </div>
+<<<<<<< HEAD
+
+      </header>
+      <ManagementHome/>
+    </div>
+  );
+}
+
+export default App;
+=======
+>>>>>>> refs/remotes/origin/devbash
       </header>*/}
 
       {showChatbot && (
