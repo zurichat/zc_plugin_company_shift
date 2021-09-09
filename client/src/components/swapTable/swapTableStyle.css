@@ -1,0 +1,49 @@
+.klareTable {
+  width: 1020px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0px 20px 20px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.klareHeadRow {
+  position: relative;
+}
+.klareHeadRow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 48px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.klareRowBack {
+  position: relative;
+}
+.klareRowBack:nth-child(odd) {
+  background: rgba(232, 240, 255, 0.8);
+}
+
+.klareRowBack::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 48px;
+  background: #30c67e;
+  border-radius: 5px 0px 0px 5px;
+}
+.klareRowBack:nth-child(odd)::before {
+  background: #ebb957;
+}
+.mb {
+  margin-bottom: 30px;
+}
+.klareTableRow {
+  padding: 16px 5px;
+}

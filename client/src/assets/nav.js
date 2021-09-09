@@ -1,19 +1,19 @@
 //thread icons
 import threadIcon from './navIcons/thread.svg';
 import meetingIcon from './navIcons/meeting-room.svg';
-import dmicon from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/dm.svg';
-import integrate from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/integrate.svg';
-import loungeicon from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/lounge.svg';
-import meetIcon from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/meeting-room.svg';
-import musicIcon from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/music-room.svg';
-import conferenceIcon from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/conference-room.svg';
-import chanIcons from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/chan-add.svg';
-import announceIcons from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/announce.svg';
-import designersIcons from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/designers.svg';
-import stageIcons from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/stage.svg';
+import dmicon from './navIcons/dm.svg';
+import integrate from './navIcons/integrate.svg';
+import loungeicon from './navIcons/lounge.svg';
+import meetIcon from './navIcons/meeting-room.svg';
+import musicIcon from './navIcons/music-room.svg';
+import conferenceIcon from './navIcons/conference-room.svg';
+import chanIcons from './navIcons/chan-add.svg';
+import announceIcons from './navIcons/announce.svg';
+import designersIcons from './navIcons/designers.svg';
+import stageIcons from './navIcons/stage.svg';
 
-import directMsg2 from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/chan-add.svg';
-import directMsg1 from '/home/asteven/Desktop/zc_plugin_company_shift/client/src/assets/navIcons/channel-down.svg';
+import directMsg2 from './navIcons/chan-add.svg';
+import directMsg1 from './navIcons/channel-down.svg';
 const navBars = [
   {
     text: 'Threads',

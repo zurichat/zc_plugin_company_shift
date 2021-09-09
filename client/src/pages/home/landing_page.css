@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+.container-fluid {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+.cs-left-column {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: -8rem;
+}
+
+.cs-right-column {
+ display: block;
+ padding: 1rem;
+}
+
+.cs-right-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cs-logo img {
+  width: 155px;
+  height: auto;
+}
+
+.cs-description h1{
+  font-weight: 700;
+  transition: 1s all ease;
+  line-height: 1.7;
+}
+
+.cs-description p {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.cs-description .cs-button {
+  width: 150px;
+    height: 56px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    background: #30c67e;
+    color: #fff;
+    border: 1px solid #30c67e;
+    border-radius: 3px;
+    transition: .2s all ease;
+}
+
+.cs-description .cs-button:hover {
+  background: #fff;
+  color: #30c67e;
+  transition: .2s all ease;
+}
+
+@media (min-width: 476px) and (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+
+  .cs-left-column {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .cs-right-column {
+    opacity: 1;
+  }
+
+  .cs-right-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cs-logo img {
+    width: 100%;
+  }
+
+  .cs-description h1{
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 35px;
+  }
+  
+  .cs-description p {
+    font-size: 25px;
+  }
+
+}
+
+@media (min-width: 275px) and (max-width: 475px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .cs-left-column {
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+  }
+
+  .cs-right-column {
+    opacity: 1;
+  }
+
+  .cs-right-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .cs-logo img {
+    width: 100%;
+  }
+  
+  .cs-description h1{
+    font-weight: 500;
+    line-height: 1.3;
+    font-size: 25px;
+  }
+  
+  .cs-description p {
+    font-size: 15px;
+  }
+
+}
