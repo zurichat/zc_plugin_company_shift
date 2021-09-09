@@ -1,15 +1,10 @@
 const db = require("../models/model");
 
 const Shift = db.shifts;
-console.log(Shift);
+
 //create and save a new Shift
 
 exports.create = (req, res) => {
-	//validate request
-	if (!req.body.title) {
-		res.status(400).send({ message: "Content can not be empty!" });
-		return;
-	}
 	//create a Shift
 	const shift = new Shift({
 		employee_name: req.body.employee_name,
@@ -17,6 +12,12 @@ exports.create = (req, res) => {
 		department: req.body.department,
 		creation_date: req.body.creation_date,
 	});
+	//validate request
+	if (!req.body.employee_name) {
+		res.status(400).send({ message: "Content can not be empty!" });
+		return;
+	}
+
 	shift
 		.save(shift)
 		.then((data) => {
