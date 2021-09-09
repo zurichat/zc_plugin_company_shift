@@ -5,6 +5,8 @@ const cors = require("cors")
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('../swagger.json');
 
+const sideBar = require('./routes/sidebar.routes')
+
 const app = express()
 
 app.use(cors())
@@ -21,29 +23,11 @@ app.get("/api/ping", (req, res) => res.json({
 	message: "Employee Shift API Success!!!",
 }))
 
-// categories employees roles api issue #97
-app.get("/api/users", (req, res) => res.json([
-	{
-		id: 1,
-		name: "Ushahemba Shir",
-		title: "Back end dev",
-	},
-	{
-		id: 2,
-		name: "Solomon Ifianyi",
-		title: "Back end dev",
-	},
-	{
-		id: 3,
-		name: "Depecode",
-		title: "Front end dev",
-	},
-	{
-		id: 4,
-		name: "John",
-		title: "Dev ops",
-	},
-]))
+app.use('/sidebar', sideBar)
+
+// app.get("/sidebar", (req, res) => res.json({
+// 	message: "Sidebar API!!!",
+// }))
 
 // render react app index.html
 app.get("*", (req, res) => {
