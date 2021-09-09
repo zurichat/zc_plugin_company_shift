@@ -1,0 +1,39 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Employee Shift Management Plugin",
+    "description": "",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "https://employeeshift.zuri.chat",
+  "basePath": "/api/v1/docs",
+  
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths":{
+    "/api/ping": {
+      "get": {
+        "description": "Ping the url for testing"
+      },
+      "produces": [
+        "application/json"
+      ],
+      "responses": {
+        "200": {
+          "description": "Employee Shift API Success!!!"
+        }
+      }
+    }
+  }
+}
