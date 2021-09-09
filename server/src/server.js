@@ -2,6 +2,8 @@ require("dotenv").config()
 const express = require("express")
 const path = require("path")
 const cors = require("cors")
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger.json');
 
 const app = express()
 
@@ -13,7 +15,9 @@ app.use(express.static(path.join(__dirname, "..", "client", "build")))
 
 // app.use(express.static(path.join(__dirname, 'build')));
 
-app.get("/api", (req, res) => res.json({
+app.use('/api/v1/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
+app.get("/api/ping", (req, res) => res.json({
 	message: "Employee Shift API Success!!!",
 }))
 
