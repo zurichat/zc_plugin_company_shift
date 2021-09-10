@@ -22,3 +22,21 @@ https://github.com/zurichat/zc_core
 ## Zuri core api
 https://api.zuri.chat/
 
+## sidebar sample
+https://companyfiles.zuri.chat/sidebar
+
+## sample of sidebar
+https://channels.zuri.chat/api/v1/sidebar/?org=1&user=5343671
+
+## Git commands
+echo "# New-Repo-commands" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ushashir/New-Repo-commands.git
+git push -u origin main
+
+git remote add upstream url-to-mai -repo
+git pull upstream dev
+
