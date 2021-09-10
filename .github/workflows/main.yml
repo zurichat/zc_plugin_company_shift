@@ -53,6 +53,8 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /var/www/zc_plugin_company_shift/
+            git clean -fd
+            git stash
             git pull origin dev
             cd server
             yarn run build
