@@ -21,5 +21,5 @@ node_modules
 .env.test.local
 .env.production.local
 
-myReadMe.md
-projectStructure.md
+/ushashir
+ushashir
