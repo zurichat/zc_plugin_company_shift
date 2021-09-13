@@ -1,0 +1,82 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Employee Shift Management Plugin",
+    "description": "",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "https://employeeshift.zuri.chat",
+  "basePath": "/api/v1",
+  
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths":{
+    "/ping": {
+      "get": {
+        "description": "Ping the url for testing"
+      },
+      "responses": {
+        "200": {
+          "description": "Employee Shift API Success!!!",
+          "content": {
+            "application/json" : {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "description": "The response message."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/addRoom/{orgId}": {
+      "post": {
+        "summary": "create a new room",
+        "description": "Add new room to organization",
+        "parameters": [{
+          "name": "room_title",
+          "in": "body",
+          "description": "The name of the room to create",
+          "schema": {
+            "required": ["room_title"],
+            "properties": {
+              "room_title": {
+                "type": "string"
+              }
+            }
+          }
+        }, 
+        {
+          "name": "orgId",
+          "in": "path",
+          "required": true,
+          "description": "The organization Id to add room to",
+          "type": "string"
+        }],
+        "responses": {
+          "200": {
+            "description": "Room added successfully"
+          }
+        }
+      }
+      
+      
+    }
+  }
+}

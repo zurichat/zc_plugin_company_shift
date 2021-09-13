@@ -2,7 +2,11 @@ require('dotenv').config()
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
+const swaggerUi = require("swagger-ui-express")
 
+const swaggerDocument = require("./docs/swagger.json")
+
+const addRoom = require('./src/routes/addRoom.routes')
 
 const app = express();
 
@@ -11,39 +15,18 @@ const PORT = process.env.PORT || 5356;
 
 app.use(express.static(path.join(__dirname, "..", "client", "build")));
 
-//app.use(express.static(path.join(__dirname, 'build')));
+//ROUTES
+app.use('/api/v1/', addRoom)
 
-app.get('/api', (req,res)=> {
+//api documentation
+app.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
+
+app.get('/api/V1/ping', (req,res)=> {
   return res.json({
     message: 'Employee Shift API Success!!!'
   })
 })
 
-// categories employees roles api issue #97
-app.get('/api/users', (req,res)=> {
-  return res.json([
-    {
-      id: 1,
-      name: 'Ushahemba Shir',
-      title: 'Back end dev'
-    },
-    {
-      id: 2,
-      name: 'Solomon Ifianyi',
-      title: 'Back end dev'
-    },
-    {
-      id: 3,
-      name: 'Depecode',
-      title: 'Front end dev'
-    },
-    {
-      id: 4,
-      name: 'John',
-      title: 'Dev ops'
-    }
-  ])
-})
 
 
 //render react app index.html
