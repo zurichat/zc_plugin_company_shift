@@ -12,6 +12,7 @@ const dbInput = {
 	"object_id": "",
 	"filter": {},
 	"payload": {}
+	
 }
 
 const create = async (data, collection_name, orgId) => {
