@@ -7,22 +7,23 @@
     "start": "cross-env NODE_ENV=production node src/server.js",
     "build": "yarn install && cd ../client &&  yarn install &&  yarn build",
     "test": "yarn test",
-    "dev": "cross-env NODE_ENV=development nodemon src/server.js",
-    "lint": "eslint ./src/** --ext .js",
-    "lint:fix": "npm run lint -- --fix"
+    "dev": "cross-env NODE_ENV=development yarn run lint && nodemon server.js",
+    "lint": "eslint ./server.js ./src/** --ext .js",
+    "lint:fix": "yarn run lint -- --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "0.21.4",
     "cors": "2.8.5",
     "cross-env": "7.0.3",
     "dotenv": "10.0.0",
     "express": "4.17.1",
     "helmet": "4.6.0",
     "nodemon": "2.0.12",
-    "swagger-jsdoc": "^6.1.0",
-    "swagger-ui-express": "4.1.6"
+    "swagger-ui-express": "4.1.6",
+    "uuidv4": "6.2.12"
   },
   "devDependencies": {
     "eslint": "7.32.0",
