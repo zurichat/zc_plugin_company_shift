@@ -7,7 +7,7 @@ const swaggerUi = require("swagger-ui-express")
 
 const addRoom = require("./src/routes/addRoom.routes")
 
-const swaggerDocument = require("./swagger.json")
+const swaggerDocument = require("./docs/swagger.json")
 
 
 const app = express()
