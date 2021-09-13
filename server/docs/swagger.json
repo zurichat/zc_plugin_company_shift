@@ -9,7 +9,7 @@
       "url": "https://opensource.org/licenses/MIT"
     }
   },
-  "host": "localhost:5356",
+  "host": "https://employeeshift.zuri.chat",
   "basePath": "/api/v1",
   
   "schemes": [
