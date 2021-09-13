@@ -12,13 +12,13 @@ const dbInput = {
 	"object_id": "",
 	"filter": {},
 	"payload": {}
-
+	
 }
 
 const create = async (data, collection_name, orgId) => {
 	dbInput.collection_name = collection_name
 	dbInput.organization_id = orgId
-	dbInput.payload = data
+	dbInput.payload = {public_rooms: data}
 
 	try {
 		const response = await axios.post(dbWrite, dbInput)  
