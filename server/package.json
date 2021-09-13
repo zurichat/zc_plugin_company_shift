@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node src/server.js",
+    "start": "cross-env NODE_ENV=production node server.js",
     "build": "yarn install && cd ../client &&  yarn install &&  yarn build",
     "test": "yarn test",
     "dev": "cross-env NODE_ENV=development yarn run lint && nodemon server.js",
