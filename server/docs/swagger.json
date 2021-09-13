@@ -9,8 +9,8 @@
       "url": "https://opensource.org/licenses/MIT"
     }
   },
-  "host": "https://employeeshift.zuri.chat",
-  "basePath": "/api/v1/docs",
+  "host": "localhost:5356",
+  "basePath": "/api/v1",
   
   "schemes": [
     "http"
@@ -22,20 +22,30 @@
     "application/json"
   ],
   "paths":{
-    "/api/ping": {
+    "/ping": {
       "get": {
         "description": "Ping the url for testing"
       },
-      "produces": [
-        "application/json"
-      ],
       "responses": {
         "200": {
-          "description": "Employee Shift API Success!!!"
+          "description": "Employee Shift API Success!!!",
+          "content": {
+            "application/json" : {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "description": "The response message."
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
-    "/api/v1/addRoom/:orgId": {
+    "/addRoom/{orgId}": {
       "post": {
         "summary": "create a new room",
         "description": "Add new room to organization",
@@ -53,7 +63,7 @@
           }
         }, 
         {
-          "name": "Organization Id",
+          "name": "orgId",
           "in": "path",
           "required": true,
           "description": "The organization Id to add room to",

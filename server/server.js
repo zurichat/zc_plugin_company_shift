@@ -22,13 +22,14 @@ const PORT = process.env.PORT || 5356
 
 app.use(express.static(path.join(__dirname, "..", "client", "build")))
 
+
 // api document
 app.use("/api/v1/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument))
 
 //====================== ROUTES ======================== 
 app.use("/api/v1", addRoom)
 
-app.get("/api/ping", (req, res) => res.json({
+app.get("/api/v1/ping", (_, res) => res.json({
 	message: "Employee Shift API Success!!!",
 }))
 
