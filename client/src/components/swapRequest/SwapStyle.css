@@ -1,5 +1,4 @@
 .swap-app {
-  position: absolute;
   top: 244px;
   left: 290px;
   width: 1050px;
@@ -8,7 +7,7 @@
 .swap-header {
   display: flex;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   padding: 10px;
 }
 .swap-header h1 {
@@ -45,7 +44,7 @@
   background-color: #fff;
   border: 0.6px solid #30c67e;
   color: #30c67e;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 .klaredepartment,
 .klareshifts,
