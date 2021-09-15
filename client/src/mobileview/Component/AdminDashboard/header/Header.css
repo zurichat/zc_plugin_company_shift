@@ -1,0 +1,18 @@
+.adminDashboard-header {
+  background-color: #00b87c;
+  height: 68px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+.admindashBoard-searchicon,
+.admindashBoard-moreicon {
+  font-size: 20px;
+  color: white;
+}
+
+.admindashBoard-searchicon {
+  margin: 0 20px;
+}

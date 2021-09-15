@@ -7,15 +7,23 @@ import Main from '../../components/main/main';
 //css
 import './shift_management.css';
 
+import Layout from '../../mobileview/Component/AdminDashboard/Layout/Layout';
+
 function ManagementHome() {
   return (
-    <div className='Management-container'>
-      {/* <MainSidebar></MainSidebar> */}
-      <div>
-        <Main></Main>
-        <Calendar />
+    <>
+      <div className='mobileadminview'>
+        <Layout></Layout>
       </div>
-    </div>
+
+      <div className='Management-container'>
+        {/* <MainSidebar></MainSidebar> */}
+        <div>
+          <Main></Main>
+          <Calendar />
+        </div>
+      </div>
+    </>
   );
 }
 
