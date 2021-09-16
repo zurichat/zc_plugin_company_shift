@@ -1,15 +1,10 @@
-import { useEffect, useState } from 'react';
 import './SwapStyle.css';
 import SwapTable from '../swapTable/SwapTable';
-import dropimage from '../../assets/Vector.png';
+
 
 function SwapRequest() {
 
-const [data,setData] = useState([]);
-
-
-const dataArr = () => {
-    const doc = [
+    const data = [
             {
                 'id':1,
                'Employee':'Emmanuel Abu',
@@ -147,111 +142,10 @@ const dataArr = () => {
 }
         ];
 
-        console.log(doc);
-
-        setData(doc);
-}
-
-const showdpsh = (e) =>{
-
-  if (!e.target.matches('.klareshifts')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content-shifts");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-
-      if (openDropdown.classList.contains('klareshow')) {
-        openDropdown.classList.remove('klareshow');}
-        else{
-          openDropdown.classList.add('klareshow');
-        }
-      }
-
-    }
-}
-
-const showdropdepartment = (e) =>{
-
-  if (!e.target.matches('.klaredepartment')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content-departments");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-
-      if (openDropdown.classList.contains('klareshow')) {
-        openDropdown.classList.remove('klareshow');}
-        else{
-          openDropdown.classList.add('klareshow');
-        }
-      }
-
-    }
-}
-
-const showdropstatus = (e) =>{
-
-  if (!e.target.matches('.klarestatus')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content-status");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-
-      if (openDropdown.classList.contains('klareshow')) {
-        openDropdown.classList.remove('klareshow');}
-        else{
-          openDropdown.classList.add('klareshow');
-        }
-      }
-
-    }
-}
-
-useEffect(() => {
-    dataArr();
-    console.log(data);
-  },[data]);
-
 
   return (
     <div className="swap-app">
       <header className="swap-header"> 
-       <div className="klareOptionBox">
-         <span className="klaredepartment"  onClick={showdropdepartment}>
-           Departments
-           <img alt="drop" src={dropimage}/>
-           <div className="dropdown-content-departments">
-             <span>Field Departments</span>
-             <span>Human Resources</span>
-             <span>IT</span>
-             <span>Engineering</span>
-           </div>
-         </span>
-         <span className="klarestatus" onClick={showdropstatus}>
-           All Status
-           <img alt="drop" src={dropimage}/>
-
-           <div className="dropdown-content-status">
-             <span>On duty</span>
-             <span>Awaiting Shifts</span>
-             <span>Off duty</span>
-             <span>Not Assigned</span>
-           </div>
-         </span>
-         <span className="klareshifts" onClick={showdpsh}>
-
-           All Shifts
-
-           <img alt="drop" src={dropimage}/>
-
-           <div className="dropdown-content-shifts">
-             <span>Morning</span>
-             <span>Afternoon</span>
-             <span>Evening</span>
-           </div>
-
-         </span>
-         <button>Back</button>
-       </div>
        <h1>
         Swap Shift Request
       </h1>
