@@ -59,7 +59,7 @@ jobs:
           host: ${{ secrets.SSH_HOSTNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           localPath: './client/build/'
-          remotePath: '/var/www/zc_plugin_company_shift/client/
+          remotePath: '/var/www/zc_plugin_company_shift/client/'
           
           
         # this job ensures your processes are restarted after the process to serve your app
