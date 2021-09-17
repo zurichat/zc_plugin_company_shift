@@ -63,12 +63,14 @@ jobs:
           
           
         # this job ensures your processes are restarted after the process to serve your app
-      # - name: Restart pm2
-      #   uses: appleboy/ssh-action@master
-      #   with:
-      #     host: ${{ secrets.SSH_HOSTNAME }}
-      #     username: ${{ secrets.SSH_USERNAME }}
-      #     password: ${{ secrets.SSH_PASSWORD }}
-      #     script: |
-      #       pm2 list
-      #       pm2 restart 0
+      - name: Restart pm2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOSTNAME }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd /var/www/zc_plugin_company_shift/server
+            sudo pm2 start yarn --name "companyshift" -- start
+            sudo pm2 list
+            sudo pm2 restart all
