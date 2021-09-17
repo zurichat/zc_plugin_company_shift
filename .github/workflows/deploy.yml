@@ -52,14 +52,14 @@ jobs:
           
        
         # this job copies the build folder from GitHub runners to the server with sftp, make sure the paths are correct      
-      - name: Copy build to server
-        uses: Creepios/sftp-action@v1.0.1
-        with:
-          username: ${{ secrets.SSH_USERNAME }}
-          host: ${{ secrets.SSH_HOSTNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
-          localPath: './client/build/'
-          remotePath: '/var/www/zc_plugin_company_shift/client/
+      #- name: Copy build to server
+        #uses: Creepios/sftp-action@v1.0.1
+       # with:
+        #  username: ${{ secrets.SSH_USERNAME }}
+      #    host: ${{ secrets.SSH_HOSTNAME }}
+       #   password: ${{ secrets.SSH_PASSWORD }}
+       #   localPath: './client/build/'
+        #  remotePath: '/var/www/zc_plugin_company_shift/client/
           
           
         # this job ensures your processes are restarted after the process to serve your app
