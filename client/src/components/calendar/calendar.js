@@ -15,7 +15,7 @@ import {
 import './block-events.css';
 import { extend } from '@syncfusion/ej2-base';
 import { SampleBase } from '../common/sample-base';
-import * as dataSource from './datasource.json';
+import dataSource from './datasource.js';
 
 export default class Calendar extends SampleBase {
   constructor() {

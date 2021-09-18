@@ -1,4 +1,4 @@
-{
+ const dataSource={ 
     "scheduleData": [{
         "Id": 1,
         "Subject": "Explosion of Betelgeuse Star",
@@ -4769,3 +4769,5 @@
         "EndTime": "2020-01-11T09:00:00.000Z"
     }]
 }
+
+export default dataSource
