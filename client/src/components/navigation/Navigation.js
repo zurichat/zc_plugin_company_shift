@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 //css
-import './navigation.css';
+import "./navigation.css";
 
 function Navigation(props) {
   return (
@@ -21,28 +21,28 @@ function Navigation(props) {
           //let info = text;
 
           return (
-            <div className='navbars-container'>
+            <div className="navbars-container">
               {eachItems.multipleIcons ? (
-                <section className='nav-items'>
-                  <span className='nav-icons-container'>
-                    <img src={eachItems.icon_1} alt='' />
+                <section className="nav-items">
+                  <span className="nav-icons-container">
+                    <img src={eachItems.icon_1} alt="" />
                   </span>
-                  <span className='nav-icons-text'>{text}</span>
-                  <span className='nav-icons-container'>
-                    <img src={eachItems.icon_2} alt='' />
+                  <span className="nav-icons-text">{text}</span>
+                  <span className="nav-icons-container">
+                    <img src={eachItems.icon_2} alt="" />
                   </span>
                 </section>
               ) : (
-                <section className='nav-items'>
-                  <span className='nav-icons-container'>
-                    <img src={icon} alt='' />
+                <section className="nav-items">
+                  <span className="nav-icons-container">
+                    <img src={icon} alt="" />
                   </span>
-                  <span className='nav-icons-text'>{text}</span>
+                  <span className="nav-icons-text">{text}</span>
                 </section>
               )}
               <br></br>
               {hasSubNav ? (
-                <div className='text-container'>
+                <div className="text-container">
                   {props.contents.map((eachs) => {
                     const {
                       //parentText,
@@ -53,24 +53,24 @@ function Navigation(props) {
                       //img,
                       text,
                     } = eachs;
-                    
+
                     if (eachItems.text === eachs.parentText) {
                       return (
-                        <section className='nav-items'>
-                          <span className='nav-icons-container'>
+                        <section className="nav-items">
+                          <span className="nav-icons-container">
                             {eachs.hasImage ? (
-                              <div className='direct-image-container'>
+                              <div className="direct-image-container">
                                 <img
-                                  className='direct-img'
+                                  className="direct-img"
                                   src={eachs.img}
-                                  alt=''
+                                  alt=""
                                 />
                               </div>
                             ) : (
-                              <img src={icon} alt='' />
+                              <img src={icon} alt="" />
                             )}
                           </span>
-                          <span className='nav-icons-text'>{text}</span>
+                          <span className="nav-icons-text">{text}</span>
                         </section>
                       );
                     } else {
@@ -82,9 +82,8 @@ function Navigation(props) {
             </div>
           );
         }
-        return null
-      }
-    )}
+        return null;
+      })}
     </>
   );
 }

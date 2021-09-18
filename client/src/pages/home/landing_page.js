@@ -11,7 +11,7 @@ const Landpage = () => {
         <div className="cs-logo">
           <img src={logo} className="cs-logo_img" alt="Employee Shift Logo" />
         </div>
-        <div className='cs-description'>
+        <div className="cs-description">
           <h1 className="cs-head">Shift Management Simplified - Task 18</h1>
           <p className="cs-built">Bulit by team curies</p>
           <Link to="/dashboard" className="cs-button">

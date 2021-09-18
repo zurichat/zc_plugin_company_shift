@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   ScheduleComponent,
   ResourcesDirective,
@@ -11,11 +11,11 @@ import {
   DragAndDrop,
   TimelineMonth,
   Day,
-} from '@syncfusion/ej2-react-schedule';
-import './block-events.css';
-import { extend } from '@syncfusion/ej2-base';
-import { SampleBase } from '../common/sample-base';
-import * as dataSource from './datasource.json';
+} from "@syncfusion/ej2-react-schedule";
+import "./block-events.css";
+import { extend } from "@syncfusion/ej2-base";
+import { SampleBase } from "../common/sample-base";
+import { dataSource } from "./datasource";
 
 export default class Calendar extends SampleBase {
   constructor() {
@@ -23,46 +23,46 @@ export default class Calendar extends SampleBase {
     this.data = extend([], dataSource.blockData, null, true);
     this.employeeData = [
       {
-        Text: 'Alice',
+        Text: "Alice",
         Id: 1,
         GroupId: 1,
-        Color: '#bbdc00',
-        Designation: 'Content writer',
+        Color: "#bbdc00",
+        Designation: "Content writer",
       },
       {
-        Text: 'Nancy',
+        Text: "Nancy",
         Id: 2,
         GroupId: 2,
-        Color: '#9e5fff',
-        Designation: 'Designer',
+        Color: "#9e5fff",
+        Designation: "Designer",
       },
       {
-        Text: 'Robert',
+        Text: "Robert",
         Id: 3,
         GroupId: 1,
-        Color: '#bbdc00',
-        Designation: 'Software Engineer',
+        Color: "#bbdc00",
+        Designation: "Software Engineer",
       },
       {
-        Text: 'Robson',
+        Text: "Robson",
         Id: 4,
         GroupId: 2,
-        Color: '#9e5fff',
-        Designation: 'Support Engineer',
+        Color: "#9e5fff",
+        Designation: "Support Engineer",
       },
       {
-        Text: 'Laura',
+        Text: "Laura",
         Id: 5,
         GroupId: 1,
-        Color: '#bbdc00',
-        Designation: 'Human Resource',
+        Color: "#bbdc00",
+        Designation: "Human Resource",
       },
       {
-        Text: 'Margaret',
+        Text: "Margaret",
         Id: 6,
         GroupId: 2,
-        Color: '#9e5fff',
-        Designation: 'Content Analyst',
+        Color: "#9e5fff",
+        Designation: "Content Analyst",
       },
     ];
   }
@@ -78,13 +78,13 @@ export default class Calendar extends SampleBase {
   }
   resourceHeaderTemplate(props) {
     return (
-      <div className='template-wrap'>
-        <div className='employee-category'>
+      <div className="template-wrap">
+        <div className="employee-category">
           <div
-            className={'employee-image ' + this.getEmployeeImage(props)}
+            className={"employee-image " + this.getEmployeeImage(props)}
           ></div>
-          <div className='employee-name'>{this.getEmployeeName(props)}</div>
-          <div className='employee-designation'>
+          <div className="employee-name">{this.getEmployeeName(props)}</div>
+          <div className="employee-designation">
             {this.getEmployeeDesignation(props)}
           </div>
         </div>
@@ -93,38 +93,38 @@ export default class Calendar extends SampleBase {
   }
   render() {
     return (
-      <div className='schedule-control-section'>
-        <div className='col-lg-12 control-section'>
-          <div className='control-wrapper drag-sample-wrapper'>
-            <div className='schedule-container'>
+      <div className="schedule-control-section">
+        <div className="col-lg-12 control-section">
+          <div className="control-wrapper drag-sample-wrapper">
+            <div className="schedule-container">
               <ScheduleComponent
                 ref={(schedule) => (this.scheduleObj = schedule)}
-                cssClass='block-events'
-                width='100%'
-                height='650px'
-                currentView='TimelineDay'
+                cssClass="block-events"
+                width="100%"
+                height="650px"
+                currentView="TimelineDay"
                 resourceHeaderTemplate={this.resourceHeaderTemplate.bind(this)}
                 eventSettings={{
                   dataSource: this.data,
                 }}
-                group={{ enableCompactView: false, resources: ['Employee'] }}
+                group={{ enableCompactView: false, resources: ["Employee"] }}
               >
                 <ResourcesDirective>
                   <ResourceDirective
-                    field='EmployeeId'
-                    title='Employees'
-                    name='Employee'
+                    field="EmployeeId"
+                    title="Employees"
+                    name="Employee"
                     allowMultiple={true}
                     dataSource={this.employeeData}
-                    textField='Text'
-                    idField='Id'
-                    colorField='Color'
+                    textField="Text"
+                    idField="Id"
+                    colorField="Color"
                   ></ResourceDirective>
                 </ResourcesDirective>
                 <ViewsDirective>
-                  <ViewDirective option='Day' />
-                  <ViewDirective option='TimelineDay' />
-                  <ViewDirective option='TimelineMonth' />
+                  <ViewDirective option="Day" />
+                  <ViewDirective option="TimelineDay" />
+                  <ViewDirective option="TimelineMonth" />
                 </ViewsDirective>
                 <Inject
                   services={[

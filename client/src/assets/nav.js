@@ -1,22 +1,22 @@
 //thread icons
-import threadIcon from './navIcons/thread.svg';
-import meetingIcon from './navIcons/meeting-room.svg';
-import dmicon from './navIcons/dm.svg';
-import integrate from './navIcons/integrate.svg';
-import loungeicon from './navIcons/lounge.svg';
-import meetIcon from './navIcons/meeting-room.svg';
-import musicIcon from './navIcons/music-room.svg';
-import conferenceIcon from './navIcons/conference-room.svg';
-import chanIcons from './navIcons/chan-add.svg';
-import announceIcons from './navIcons/announce.svg';
-import designersIcons from './navIcons/designers.svg';
-import stageIcons from './navIcons/stage.svg';
+import threadIcon from "./navIcons/thread.svg";
+import meetingIcon from "./navIcons/meeting-room.svg";
+import dmicon from "./navIcons/dm.svg";
+import integrate from "./navIcons/integrate.svg";
+import loungeicon from "./navIcons/lounge.svg";
+import meetIcon from "./navIcons/meeting-room.svg";
+import musicIcon from "./navIcons/music-room.svg";
+import conferenceIcon from "./navIcons/conference-room.svg";
+import chanIcons from "./navIcons/chan-add.svg";
+import announceIcons from "./navIcons/announce.svg";
+import designersIcons from "./navIcons/designers.svg";
+import stageIcons from "./navIcons/stage.svg";
 
-import directMsg2 from './navIcons/chan-add.svg';
-import directMsg1 from './navIcons/channel-down.svg';
+import directMsg2 from "./navIcons/chan-add.svg";
+import directMsg1 from "./navIcons/channel-down.svg";
 const navBars = [
   {
-    text: 'Threads',
+    text: "Threads",
     icon: threadIcon,
     subNav: false,
     hasIcon: true,
@@ -25,7 +25,7 @@ const navBars = [
     hasSubNav: false,
   },
   {
-    text: 'Mentions & Reactions ',
+    text: "Mentions & Reactions ",
     icon: meetingIcon,
     subNav: false,
     hasIcon: true,
@@ -34,7 +34,7 @@ const navBars = [
     hasSubNav: false,
   },
   {
-    text: 'All DMs',
+    text: "All DMs",
     icon: dmicon,
     subNav: false,
     hasIcon: true,
@@ -43,7 +43,7 @@ const navBars = [
     hasSubNav: false,
   },
   {
-    text: 'Integrate',
+    text: "Integrate",
     icon: integrate,
     subNav: false,
     hasIcon: true,
@@ -52,60 +52,60 @@ const navBars = [
     hasSubNav: true,
   },
   {
-    text: 'Lounge',
+    text: "Lounge",
     icon: loungeicon,
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Integrate',
+    parentText: "Integrate",
   },
   {
-    text: 'Meeting-room',
+    text: "Meeting-room",
     icon: meetIcon,
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Integrate',
+    parentText: "Integrate",
   },
   {
-    text: 'shift-management',
-    icon: '',
+    text: "shift-management",
+    icon: "",
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Integrate',
+    parentText: "Integrate",
   },
   {
-    text: 'Music-room',
+    text: "Music-room",
     icon: musicIcon,
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Integrate',
+    parentText: "Integrate",
   },
   {
-    text: 'Conference-room',
+    text: "Conference-room",
     icon: conferenceIcon,
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Integrate',
+    parentText: "Integrate",
   },
 
   {
     icon_2: directMsg2,
     icon_1: directMsg1,
-    text: 'Channels',
+    text: "Channels",
     icon: chanIcons,
     subNav: false,
     hasIcon: true,
@@ -115,37 +115,37 @@ const navBars = [
     multipleIcons: true,
   },
   {
-    text: 'announcements',
+    text: "announcements",
     icon: announceIcons,
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Channels',
+    parentText: "Channels",
   },
   {
-    text: 'designers',
+    text: "designers",
     icon: designersIcons,
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Channels',
+    parentText: "Channels",
   },
   {
-    text: 'stage 4',
+    text: "stage 4",
     icon: stageIcons,
     subNav: true,
     hasIcon: true,
     hasImage: false,
     img: null,
     hasSubNav: false,
-    parentText: 'Channels',
+    parentText: "Channels",
   },
   {
-    text: 'Direct Messages',
+    text: "Direct Messages",
     icon_2: directMsg2,
     icon_1: directMsg1,
     subNav: false,
@@ -156,44 +156,44 @@ const navBars = [
     multipleIcons: true,
   },
   {
-    text: 'Miles Esther',
-    icon: '',
+    text: "Miles Esther",
+    icon: "",
     subNav: true,
     hasIcon: false,
     hasImage: true,
-    img: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
+    img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
     hasSubNav: false,
-    parentText: 'Direct Messages',
+    parentText: "Direct Messages",
   },
   {
-    text: 'Cooper Kristin',
-    icon: '',
+    text: "Cooper Kristin",
+    icon: "",
     subNav: true,
     hasIcon: false,
     hasImage: true,
-    img: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
+    img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
     hasSubNav: false,
-    parentText: 'Direct Messages',
+    parentText: "Direct Messages",
   },
   {
-    text: 'Flores Juanita',
-    icon: '',
+    text: "Flores Juanita",
+    icon: "",
     subNav: false,
     hasIcon: false,
     hasImage: true,
-    img: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
+    img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
     hasSubNav: false,
-    parentText: 'Direct Messages',
+    parentText: "Direct Messages",
   },
   {
-    text: 'Black Marvin',
-    icon: '',
+    text: "Black Marvin",
+    icon: "",
     subNav: false,
     hasIcon: false,
     hasImage: true,
-    img: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
+    img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
     hasSubNav: false,
-    parentText: 'Direct Messages',
+    parentText: "Direct Messages",
   },
 ];
 
