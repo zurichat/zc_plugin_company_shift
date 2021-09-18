@@ -1,0 +1,4 @@
+{
+    "eslint.trace.server":  "off",
+    "eslint.quiet": true
+}

@@ -5,6 +5,9 @@ module.exports = {
         },
         {
             name: "Rooms CRUD"
+        },
+        {
+            name: "Shifts CRUD"
         }
     ]
 }
