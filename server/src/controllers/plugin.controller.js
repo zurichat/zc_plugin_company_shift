@@ -52,7 +52,7 @@ exports.sidebar = async (req, res) => {
 
   const sidebarListObject = {
     status: 'success',
-    pluginId: PLUGIN_ID || '6134c6a40366b6816a0b75cd',
+    pluginId: PLUGIN_ID,
     pluginName,
     organisationId: org,
     userId: user,
