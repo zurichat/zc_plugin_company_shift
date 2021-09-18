@@ -27,8 +27,10 @@ jobs:
          #and also to build the static files that would be transferred to server later
       - name: install Dependencies
         run: |
+          cd server 
           yarn install
-          cd client
+
+          cd ../client
           yarn install
           yarn build
           
@@ -71,6 +73,6 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           script: |
             cd /var/www/zc_plugin_company_shift/server
-            sudo pm2 start 
+           
             sudo pm2 list
             sudo pm2 restart all
