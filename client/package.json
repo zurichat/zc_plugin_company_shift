@@ -4,6 +4,7 @@
   "private": true,
   "proxy": "http://localhost:5000",
   "dependencies": {
+    "@craco/craco": "^6.3.0",
     "@fullcalendar/daygrid": "4.0.1",
     "@fullcalendar/interaction": "4.0.2",
     "@fullcalendar/react": "4.0.2-beta",
@@ -25,16 +26,17 @@
     "web-vitals": "1.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.3.4",
-    "postcss": "^8.3.6",
+    "autoprefixer": "9",
+    "postcss": "8",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.2.15"
   },
   "scripts": {
-    "start": "yarn run watch:css && react-scripts start",
-    "build": "yarn run watch:css && react-scripts build",
+    "start": "yarn watch:css && react-scripts start",
+    "build": "yarn build:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/tailwind.css -o src/assets/main.css",
     "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {

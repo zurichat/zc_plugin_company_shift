@@ -1,0 +1,16 @@
+.swap-app {
+
+}
+
+.swap-header {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+}
+.swap-header h1 {
+  font-size: 27px;
+  text-align: start;
+  padding: 10px;
+  margin: 15px 10px 0px 10px;
+}

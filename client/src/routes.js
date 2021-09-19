@@ -6,6 +6,7 @@ import CreateShift from './components/modal/CreateShift';
 import Modal from './components/Modals/Modal';
 import ModalTwo from './components/Modals/ModalTwo';
 import Modall from './components/Modals/Modall';
+import ShiftSwapRequest from './pages/shift_swap_request/shiftSwapRequest';
 
 const Routes = () => {
     return (
@@ -16,6 +17,8 @@ const Routes = () => {
             <Route path='/modal' component={Modal} />
             <Route path='/modaltwo' component={ModalTwo} />
             <Route path='/modall' component={Modall} />
+            <Route path='/shiftrequest' component={ShiftSwapRequest}  />
+
             {/* <Route  path="*"><Error/></Route> */}
         </Switch>
     )

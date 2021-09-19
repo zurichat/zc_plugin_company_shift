@@ -5,18 +5,30 @@
   "main": "server.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node server.js",
-    "build": "cd ../client &&  yarn install &&  yarn build",
+    "build": "yarn install && cd ../client &&  yarn install &&  yarn build",
     "test": "yarn test",
-    "dev": "cross-env NODE_ENV=development nodemon server.js"
+    "dev": "cross-env NODE_ENV=development yarn run lint && nodemon server.js",
+    "lint": "eslint ./server.js ./src/** --ext .js",
+    "lint:fix": "yarn run lint -- --fix"
   },
   "keywords": [],
-  "author": "",
+  "author": "team curies",
   "license": "ISC",
   "dependencies": {
+    "axios": "0.21.4",
+    "colors": "^1.4.0",
     "cors": "2.8.5",
     "cross-env": "7.0.3",
     "dotenv": "10.0.0",
     "express": "4.17.1",
-    "nodemon": "2.0.12"
-  }
+    "express-async-errors": "^3.1.1",
+    "helmet": "4.6.0",
+    "joi": "^17.4.2",
+    "joi-objectid": "^4.0.2",
+    "nodemon": "2.0.12",
+    "slugify": "^1.6.0",
+    "swagger-ui-express": "4.1.6",
+    "uuidv4": "6.2.12"
+  },
+  "devDependencies": {}
 }

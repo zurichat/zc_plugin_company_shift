@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.klare-main-conatiner {
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid black;
+  margin-bottom: 5rem;
+}
+.klare-main-header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.klare-main-input-container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.klare-input-box {
+  width: 390px;
+  height: 32px;
+  padding-left: 5px;
+}
+.klare-search-icon-main {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  /* width: 12px; */
+  font-size: 24px;
+}
+.klare-main-settings-icon {
+  font-size: 24px;
+}
+
+.klare-admin-img-holder {
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  border-radius: 40px;
+  margin: 10px;
+}
+.klare-admin-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+}
+.klare-main-header-wrapper {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.klare-main-title {
+  position: absolute;
+  top: 80px;
+  width: 79%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 115px;
+}
+
+.klare-main-title-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  font-size: 30px;
+}
+.klare-main-img-container {
+  height: 80%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.klare-main-title-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.klare-main-text-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+}
+
+.klare-main-text-img-2 {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+
+  margin-top: 10px;
+}
+
+.klare-main-title-btns button {
+  width: 138px;
+  height: 56px;
+  border-radius: 3px;
+  border: 0.6px solid rgba(48, 198, 126, 1);
+}
+
+.klare-shift-btn {
+  background-color: #fcfcfc;
+}
+.klare-create-btn {
+  background-color: rgba(48, 198, 126, 1);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .klare-main-txt {
+    font-size: 0.5em;
+  }
+  .klare-main-department-items select {
+    width: 100px;
+  }
+  .klare-main-title-btns button {
+    width: 200px;
+  }
+}

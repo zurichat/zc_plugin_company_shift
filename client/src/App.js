@@ -1,6 +1,7 @@
 //import logo from './assets/company_shift_logo.png';
 //import company from './assets/company_shift.png';
 import React, { useState } from "react";
+import './assets/main.css';
 import { BrowserRouter as Router } from "react-router-dom";
 import Chatbot from "react-chatbot-kit";
 import "./components/chatbot/chatbot.css"
