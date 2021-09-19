@@ -12,6 +12,7 @@
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.1.0",
     "@testing-library/user-event": "12.1.10",
+    "craco": "^0.0.3",
     "react": "17.0.2",
     "react-big-scheduler": "0.2.7",
     "react-chatbot-kit": "^1.1.20",
@@ -24,15 +25,17 @@
     "web-vitals": "1.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "9",
-    "postcss": "7",
-    "tailwindcss": "yarn:@tailwindcss/postcss7-compat"
+    "autoprefixer": "^10.3.4",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "yarn run watch:css && react-scripts start",
+    "build": "yarn run watch:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/main.css"
   },
   "eslintConfig": {
     "extends": [
