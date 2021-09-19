@@ -1,7 +1,11 @@
 .swap-app {
+<<<<<<< HEAD
   top: 244px;
   left: 290px;
   width: 1050px;
+=======
+
+>>>>>>> c860b74556a0e14c3936f46f37c2bf2c1f076a97
 }
 
 .swap-header {
@@ -16,6 +20,7 @@
   padding: 10px;
   margin: 15px 10px 0px 10px;
 }
+<<<<<<< HEAD
 .klareOptionBox {
   display: flex;
   flex-direction: row;
@@ -77,3 +82,5 @@
 .klareshow {
   display: block;
 }
+=======
+>>>>>>> c860b74556a0e14c3936f46f37c2bf2c1f076a97

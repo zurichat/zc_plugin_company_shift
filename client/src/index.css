@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 500px) {
   .Management-container {
     display: none;
@@ -15,3 +16,8 @@
     display: none;
   }
 }
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+>>>>>>> c860b74556a0e14c3936f46f37c2bf2c1f076a97
