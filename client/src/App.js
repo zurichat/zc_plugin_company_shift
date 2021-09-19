@@ -1,6 +1,5 @@
 //import logo from './assets/company_shift_logo.png';
 //import company from './assets/company_shift.png';
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Chatbot from 'react-chatbot-kit';
@@ -8,16 +7,10 @@ import './components/chatbot/chatbot.css';
 import ActionProvider from './components/chatbot/ActionProvider';
 import config from './components/chatbot/config';
 import MessageParser from './components/chatbot/MessageParser';
-=======
-import React, { useState } from "react";
+
 import './assets/main.css';
-import { BrowserRouter as Router } from "react-router-dom";
-import Chatbot from "react-chatbot-kit";
-import "./components/chatbot/chatbot.css"
-import ActionProvider from "./components/chatbot/ActionProvider";
-import config from "./components/chatbot/config";
-import MessageParser from "./components/chatbot/MessageParser";
->>>>>>> c860b74556a0e14c3936f46f37c2bf2c1f076a97
+
+import './components/chatbot/chatbot.css';
 
 // import ManagementHome from './pages/shift_management';
 
