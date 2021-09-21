@@ -64,3 +64,27 @@ exports.getPing = {
         },
       },
 }
+
+
+
+
+exports.getWorkShift = {
+  get: {
+      tags: ["Info"],
+      description: "WorkShift Plug-in", 
+      operationId: "getWorkShift",
+      parameters: [],
+      responses: {
+        200: {
+          description: "WorkShift was Successful",
+          content: {
+            "application/json": {
+              // schema: {
+              //   $ref: "#/components/schemas/Folder",
+              // },
+            },
+          },
+        },
+      },
+    },
+}
