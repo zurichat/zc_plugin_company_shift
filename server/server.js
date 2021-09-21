@@ -19,7 +19,7 @@ app.use(express.json()); // For parsing application/json
 app.use(express.urlencoded({ extended: false })); // For parsing application/x-www-form-urlencoded
 app.use(cors());
 
-// app.use(express.static(path.resolve(__dirname, "./frontend/build")));
+app.use(express.static(path.resolve(__dirname, "../client/build")));
 
 if (isProduction) {
 	app.set("trust proxy", 1); // Trust first proxy
@@ -30,12 +30,12 @@ if (isProduction) {
 app.use("/api/v1", rootRouter); // For mounting the root router on the specified path
 
 // All other GET requests not handled before will return our React app
-// app.use((req, res, next) => {
-// 	res.header("Cache-Control", "private, no-cache, no-store, must-revalidate");
-// 	res.header("Expires", "-1");
-// 	res.header("Pragma", "no-cache");
-// 	res.sendFile(path.join(__dirname, "./frontend/build", "index.html"));
-// });
+app.use((req, res, next) => {
+	res.header("Cache-Control", "private, no-cache, no-store, must-revalidate");
+	res.header("Expires", "-1");
+	res.header("Pragma", "no-cache");
+	res.sendFile(path.join(__dirname, "../client/build", "index.html")); 
+});
 
 // For handling server errors and all other errors that might occur
 app.use(ErrorHandler);
