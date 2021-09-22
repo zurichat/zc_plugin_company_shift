@@ -79,7 +79,7 @@ function Main() {
               <AiOutlineDown></AiOutlineDown>
             </span>
           </button>
-          <Link to='/createshift'><button className='create-btn'>create a new shift</button></Link>
+          <Link to='/modal'><button className='create-btn'>create a new shift</button></Link>
         </div>
       </section>
       <br />

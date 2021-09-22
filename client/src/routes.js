@@ -3,6 +3,8 @@ import { Route, Switch } from "react-router-dom";
 import ManagementHome from './pages/shift_management/shift_management'
 import Landpage from './pages/home/landing_page';
 import CreateShift from './components/modal/CreateShift';
+import Modal from './components/Modals/Modal';
+import Modall from './components/Modals/Modall';
 import ShiftSwapRequest from './pages/shift_swap_request/shiftSwapRequest';
 
 const Routes = () => {
@@ -11,6 +13,8 @@ const Routes = () => {
             <Route path='/' component={Landpage} exact/>
             <Route path='/dashboard' component={ManagementHome}  />
             <Route path='/createShift' component={CreateShift} />
+            <Route path='/modal' component={Modal} />
+            <Route path='/modall' component={Modall} />
             <Route path='/shiftrequest' component={ShiftSwapRequest}  />
 
             {/* <Route  path="*"><Error/></Route> */}
