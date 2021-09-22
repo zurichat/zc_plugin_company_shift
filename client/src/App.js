@@ -8,6 +8,8 @@ import "./components/chatbot/chatbot.css"
 import ActionProvider from "./components/chatbot/ActionProvider";
 import config from "./components/chatbot/config";
 import MessageParser from "./components/chatbot/MessageParser";
+import {Notification } from './components/notification/notification';
+
 
 // import ManagementHome from './pages/shift_management';
 
