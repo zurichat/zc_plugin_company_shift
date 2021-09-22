@@ -19,7 +19,7 @@ export const Modal = ({ show, close }) => {
                 </div>
                 <div className="mt-6 pb-3 p-2 rounded-lg border border-red-400 bg-red-500 text-white divide-y-2 divide-solid divide-red-400 hover:bg-red-900 hover:-translate-y-0.5 transform transition">
                 <h2 className="font-bold text-xl pb-2">Off Duty!</h2>
-                  <p class="pt-2">This is to notify you about your end shift resumption today.</p>
+                  <p class="pt-2">This is to notify you about your end of shift today.</p>
 
                 </div>
                 <div className="'modal-footer' mt-6 text-center flex justify-end">
