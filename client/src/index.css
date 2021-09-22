@@ -1,3 +1,20 @@
+@media (max-width: 500px) {
+  .Management-container {
+    display: none;
+  }
+  .mobileadminview {
+    display: block;
+  }
+}
+
+@media (min-width: 500px) {
+  .Management-container {
+    display: flex;
+  }
+  .mobileadminview {
+    display: none;
+  }
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

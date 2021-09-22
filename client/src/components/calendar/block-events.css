@@ -1,65 +1,116 @@
 .block-events.e-schedule .template-wrap {
-    width: 100%;
+  width: 100%;
 }
 
 .block-events.e-schedule .e-vertical-view .e-resource-cells {
-    height: 58px;
+  height: 58px;
 }
 
 .block-events.e-schedule .e-timeline-view .e-resource-left-td,
 .block-events.e-schedule .e-timeline-month-view .e-resource-left-td {
-    width: 170px;
+  width: 170px;
 }
 
 .block-events.e-schedule .e-resource-cells.e-child-node .employee-category,
 .block-events.e-schedule .e-resource-cells.e-child-node .employee-name {
-    padding: 5px
+  padding: 5px;
 }
 
 .block-events.e-schedule .employee-image {
-    width: 45px;
-    height: 40px;
-    float: left;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-repeat: no-repeat;
-    background-size: 45px;
+  width: 45px;
+  height: 40px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: 45px;
 }
 
 .block-events.e-schedule .employee-name {
-    font-size: 13px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .block-events.e-schedule .employee-designation {
-    font-size: 10px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
+  font-size: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .block-events.e-schedule .template-wrap .employee-image.alice {
-    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/alice.png');
+  background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/alice.png');
 }
 
 .block-events.e-schedule .template-wrap .employee-image.robert {
-    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/robert.png');
+  background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/robert.png');
 }
 
 .block-events.e-schedule .template-wrap .employee-image.robson {
-    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/robson.png');
+  background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/robson.png');
 }
 
 .block-events.e-schedule .template-wrap .employee-image.laura {
-    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/laura.png');
+  background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/laura.png');
 }
 
 .block-events.e-schedule .template-wrap .employee-image.nancy {
-    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/nancy.png');
+  background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/nancy.png');
 }
 
 .block-events.e-schedule .template-wrap .employee-image.margaret {
-    background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/margaret.png');
+  background-image: url('https://ej2.syncfusion.com/react/demos/src/schedule/images/margaret.png');
+}
+
+.main-department-date {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.week-container {
+  width: 95px;
+  height: 36px;
+  border-radius: 3px;
+  border: solid 1px rgba(232, 240, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.day-container {
+  font-size: 18px;
+}
+.move-btn {
+  width: 70px;
+  height: 50px;
+  box-shadow: 1px 2px 16px 0px rgba(136, 136, 136, 0.07);
+  color: rgba(136, 136, 136, 0.07);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+.bell-container {
+  font-size: 15px;
+
+  position: relative;
+  width: 20px;
+}
+
+.bell-icon {
+  font-size: 25px;
+}
+
+.notification-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #0dbe3f;
+
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }

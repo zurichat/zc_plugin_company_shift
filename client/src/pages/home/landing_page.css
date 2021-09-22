@@ -17,8 +17,8 @@
 }
 
 .cs-right-column {
- display: block;
- padding: 1rem;
+  display: block;
+  padding: 1rem;
 }
 
 .cs-right-column img {
@@ -32,7 +32,7 @@
   height: auto;
 }
 
-.cs-description h1{
+.cs-description h1 {
   font-weight: 700;
   transition: 1s all ease;
   line-height: 1.7;
@@ -45,24 +45,24 @@
 
 .cs-description .cs-button {
   width: 150px;
-    height: 56px;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    background: #30c67e;
-    color: #fff;
-    border: 1px solid #30c67e;
-    border-radius: 3px;
-    transition: .2s all ease;
+  height: 56px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  background: #30c67e;
+  color: #fff;
+  border: 1px solid #30c67e;
+  border-radius: 3px;
+  transition: 0.2s all ease;
 }
 
 .cs-description .cs-button:hover {
   background: #fff;
   color: #30c67e;
-  transition: .2s all ease;
+  transition: 0.2s all ease;
 }
 
 @media (min-width: 476px) and (max-width: 768px) {
@@ -92,16 +92,15 @@
     width: 100%;
   }
 
-  .cs-description h1{
+  .cs-description h1 {
     font-weight: 700;
     line-height: 1.5;
     font-size: 35px;
   }
-  
+
   .cs-description p {
     font-size: 25px;
   }
-
 }
 
 @media (min-width: 275px) and (max-width: 475px) {
@@ -130,15 +129,14 @@
   .cs-logo img {
     width: 100%;
   }
-  
-  .cs-description h1{
+
+  .cs-description h1 {
     font-weight: 500;
     line-height: 1.3;
     font-size: 25px;
   }
-  
+
   .cs-description p {
     font-size: 15px;
   }
-
 }

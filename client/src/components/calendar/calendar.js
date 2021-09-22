@@ -16,6 +16,9 @@ import './block-events.css';
 import { extend } from '@syncfusion/ej2-base';
 import { SampleBase } from '../common/sample-base';
 import * as dataSource from './datasource.json';
+import { IoChevronBackOutline } from 'react-icons/io5';
+import { IoChevronForward } from 'react-icons/io5';
+import { IoMdNotificationsOutline } from 'react-icons/io';
 
 export default class Calendar extends SampleBase {
   constructor() {
@@ -94,6 +97,30 @@ export default class Calendar extends SampleBase {
   render() {
     return (
       <div className='schedule-control-section'>
+        <div className='main-department-date'>
+          <div className='week-container'>
+            <p>Weekly</p>
+          </div>
+
+          <div className='day-container'>
+            <p>Mon 27 - Fri 31</p>
+          </div>
+
+          <div className='move-btn'>
+            <button>
+              <IoChevronBackOutline></IoChevronBackOutline>
+            </button>
+            <button>
+              <IoChevronForward></IoChevronForward>
+            </button>
+          </div>
+          <div className='bell-container'>
+            <IoMdNotificationsOutline className='bell-icon'></IoMdNotificationsOutline>
+            <div className='notification-dot'></div>
+          </div>
+        </div>
+        <br></br>
+        <br></br>
         <div className='col-lg-12 control-section'>
           <div className='control-wrapper drag-sample-wrapper'>
             <div className='schedule-container'>

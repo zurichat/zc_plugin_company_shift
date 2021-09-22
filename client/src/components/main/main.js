@@ -7,7 +7,6 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { FiSettings } from 'react-icons/fi';
 import { AiOutlineDown } from 'react-icons/ai';
 
-
 function Main() {
   // const [Employee, setEmployee] = useState(Employ);
   return (
@@ -34,13 +33,86 @@ function Main() {
         </div>
       </section>
 
+      <section className='logged-users-container'>
+        <div className='page-title'>
+          <p>
+            Shift Management &nbsp;
+            <AiOutlineDown></AiOutlineDown>
+          </p>
+        </div>
+        <div className='user-photo-container'>
+          <div className='photo-wrapper'>
+            <span className='user-photo'>
+              <img
+                src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
+                className='user-img'
+                alt=''
+              />
+            </span>
+
+            <span className='user-photo'>
+              <img
+                src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
+                className='user-img'
+                alt=''
+              />
+            </span>
+            <span className='user-photo'>
+              <img
+                src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
+                className='user-img'
+                alt=''
+              />
+            </span>
+            <span className='user-photo'>
+              <img
+                src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
+                className='user-img'
+                alt=''
+              />
+            </span>
+          </div>
+          <span>
+            <h3 className='amount-logged-in'>300</h3>
+          </span>
+        </div>
+      </section>
+
       <section className='main-title'>
         <div className='main-title-text'>
-          <span className='main-txt'>
-            <h1>Shift Management</h1>
-          </span>
+          <section className='main-department-section'>
+            <div className='main-department-items'>
+              <select name='' id=''>
+                <option value=''>Departments</option>
+                <option value=''>Field department</option>
+                <option value=''>Human Resources</option>
+                <option value=''>IT</option>
+                <option value=''>Engineering</option>
+              </select>
+
+              <span>
+                <select name='' id=''>
+                  <option value=''>All Status</option>
+                  <option value=''>On duty</option>
+                  <option value=''>Awaiting Shifts</option>
+                  <option value=''>Off Duty</option>
+                  <option value=''>Not Assigned</option>
+                </select>
+              </span>
+
+              <span>
+                <select name='' id=''>
+                  <option value=''>All Shifts</option>
+                  <option value=''>Morning</option>
+                  <option value=''>Afternoon</option>
+                  <option value=''>Interns</option>
+                  <option value=''>Evening</option>
+                </select>
+              </span>
+            </div>
+          </section>
           &nbsp;
-          <div className='main-img-container'>
+          {/* <div className='main-img-container'>
             <div className='main-text-img'>
               <img
                 src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80'
@@ -69,7 +141,7 @@ function Main() {
                 style={{ width: '100%', height: '100%', borderRadius: '24px' }}
               />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className='main-title-btns'>
@@ -79,45 +151,10 @@ function Main() {
               <AiOutlineDown></AiOutlineDown>
             </span>
           </button>
-          <Link to='/createshift'><button className='create-btn'>create a new shift</button></Link>
+          <Link to='/createshift'>
+            <button className='create-btn'>create a new shift</button>
+          </Link>
         </div>
-      </section>
-      <br />
-
-      <section className='main-department-section'>
-        <div className='main-department-items'>
-          <select name='' id=''>
-            <option value=''>Departments</option>
-            <option value=''>Field department</option>
-            <option value=''>Human Resources</option>
-            <option value=''>IT</option>
-            <option value=''>Engineering</option>
-          </select>
-
-          <span>
-            <select name='' id=''>
-              <option value=''>All Status</option>
-              <option value=''>On duty</option>
-              <option value=''>Awaiting Shifts</option>
-              <option value=''>Off Duty</option>
-              <option value=''>Not Assigned</option>
-            </select>
-          </span>
-
-          <span>
-            <select name='' id=''>
-              <option value=''>All Shifts</option>
-              <option value=''>Morning</option>
-              <option value=''>Afternoon</option>
-              <option value=''>Interns</option>
-              <option value=''>Evening</option>
-            </select>
-          </span>
-        </div>
-      </section>
-      <br />
-      <section>
-        
       </section>
     </div>
   );

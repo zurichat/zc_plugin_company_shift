@@ -1,11 +1,10 @@
 .swap-app {
-
 }
 
 .swap-header {
   display: flex;
   flex-direction: column;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   padding: 10px;
 }
 .swap-header h1 {
